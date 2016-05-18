@@ -36,13 +36,41 @@ router.get('/labels-to-issues', function(req, res, next) {
 });
 
 router.get('/salary-report', function(req, res, next) {
-    var employee = req.query['employee'];
-    var employeeType = req.query['employeeType'];
+    var employee = req.query['employee'],
+        employeeType = req.query['employeeType'],
+        calcWork = function(r){
+            var connectionRate = {master: 70, worker: 70, assistant: 50},
+                rateMeter = 0.75,
+                hourRate = {master: 45, worker: 31.5, assistant: 0};
+
+            if (r.issuetype == 10102 || r.issuetype == 10101) {
+                //Магистраль
+                r.work = r.time_spent / 60;
+                r.unit = 'm';
+                r.rate = rateMeter;
+                r.cost = r.work * rateMeter;
+            } else if (r.issuetype == 10100) {
+                // Подключение
+                r.work = 1;
+                r.unit = 'шт.';
+                r.cost = r.rate = connectionRate[r.employee_type];
+            } else {
+                // Почасовка
+                r.work = r.time_spent / 3600;
+                r.unit = 'h';
+                r.rate = hourRate[r.employee_type];
+                r.cost = r.work * r.rate;
+            }
+        };
     req.pool.query(
         'call get_salary_report(?, ?)',
         [employee, employeeType],
         function(err, recordset, fields){
-            res.json(recordset[0]);
+            var records = recordset[0];
+            records.forEach(function(record){
+                calcWork(record);
+            });
+            res.json(records);
         }
     )
 });

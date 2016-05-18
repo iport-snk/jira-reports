@@ -39,16 +39,29 @@ Ext.define('JC.view.SalaryReport', {
     },{
         header: 'type_name',
         dataIndex: 'type_name',
+        renderer: function(value, metaData, record, rowIdx, colIdx, store, view){
+            return value == 0 ? '' : value + ' (' + record.get('unit') + ')';
+        },
         width: 200
     },{
         header: 'work',
-        dataIndex: 'work'
+        dataIndex: 'work',
+        align: 'right',
+        renderer: function(value, metaData, record, rowIdx, colIdx, store, view){
+            return value == 0 ? '' : Ext.util.Format.number(value, '0.00');
+        }
+    },{
+        header: 'rate',
+        dataIndex: 'rate',
+        align: 'right',
+        renderer: function(value, metaData, record, rowIdx, colIdx, store, view){
+            return (value == 0 || record.get('work') == 0 ) ? '' : Ext.util.Format.number(value, '0.00');
+        }
     },{
         header: 'cost',
         dataIndex: 'cost',
         align: 'right',
         renderer: function(value, metaData, record, rowIdx, colIdx, store, view){
-
             return value == 0 ? '' : Ext.util.Format.number(value, '0.00');
         },
         summaryRenderer: function(value, summaryData, dataIndex) {
