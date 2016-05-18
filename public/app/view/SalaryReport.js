@@ -4,6 +4,7 @@ Ext.define('JC.view.SalaryReport', {
     store: 'SalaryReport',
     tbar: [{
         xtype: 'combo',
+        id: 'employeeSelector',
         fieldLabel: 'Работник',
         store: Ext.create('Ext.data.Store',{
             fields: ['employee', 'employee_type'],
@@ -14,14 +15,6 @@ Ext.define('JC.view.SalaryReport', {
             },
             autoLoad: true
         }),
-        listeners: {
-            change: function(){
-                var record = this.getSelectedRecord();
-                Ext.getStore('SalaryReport').load({
-                    params: {employee: record.get('employee'), employeeType: record.get('employee_type')}
-                });
-            }
-        },
         queryMode: 'local',
         displayField: 'employee',
         valueField: 'employee'

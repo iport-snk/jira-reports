@@ -10,7 +10,7 @@ Ext.define('JC.Application', {
     ],
 
     models: [],
-    controllers: [],
+    controllers: ['SalaryReport'],
     stores: ['SalaryReport', 'Labels'],
     launch: function () {
         Ext.create('JC.view.Viewport');
