@@ -20,7 +20,9 @@ router.get('/labels', function(req, res, next) {
 
 router.get('/workers', function(req, res, next) {
     req.pool.query('' +
-        'SELECT ASSIGNEE as employee, "worker" employee_type  FROM jiradb.jiraissue where project = 10000 and ASSIGNEE is not null group by ASSIGNEE ' +
+        'SELECT ASSIGNEE as employee, ' +
+        "   IF(ASSIGNEE = 'bd', 'master', 'worker') as employee_type  " +
+        '   FROM jiradb.jiraissue where project = 10000 and ASSIGNEE is not null group by ASSIGNEE ' +
         '   union ' +
         "select label as employee, 'assistant' as employee_type  from label where fieldid = 10100 group by label",
         function(err, rows, fields){
