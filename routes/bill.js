@@ -25,8 +25,7 @@ router.get('/payments', function(req, res, next) {
         function(err, recordset, fields){
             var dataset = {
                 records: recordset[0],
-                byPaymentType: recordset[1],
-                byProvider: recordset[2]
+                totals: recordset[1]
             };
             if (reportType == 'excel') {
                 var conf = prepareConf(req.query.name, dataset.records),

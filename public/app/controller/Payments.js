@@ -81,10 +81,7 @@ Ext.define('JC.controller.Payments', {
         }
     },
     onStoreLoad: function(store){
-        var providers = store.proxy.reader.rawData.byProvider,
-            payments = store.proxy.reader.rawData.byPaymentType;
-
-        this.getFooter().update(payments);
+        this.getFooter().update(store.proxy.reader.rawData.totals);
     }
 
 });
