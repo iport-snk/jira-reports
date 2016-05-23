@@ -7,7 +7,8 @@ Ext.define('JC.view.Viewport', {
         'JC.view.SalaryReport',
         'JC.view.TaskList',
         'JC.view.TaskRow',
-        'JC.view.Filters'
+        'JC.view.Payments',
+        'JC.view.PaymentTotals'
     ],
 
     layout: {
@@ -18,13 +19,15 @@ Ext.define('JC.view.Viewport', {
         layout: 'fit',
         xtype: 'tabpanel',
         items:[{
-            title: 'Отчет',
+            title: 'Зарплата',
             xtype: 'SalaryReport'
         },{
+            title: 'Плaтежи',
+            xtype: 'Payments'
+        }/*,{
             title: 'Фильтры',
             xtype: 'Filters'
-        }
-            /*,{
+        },{
             title: 'Задачи',
             xtype: 'TaskList'
         }*/
