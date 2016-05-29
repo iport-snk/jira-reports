@@ -19,10 +19,28 @@ Ext.define('JC.view.SalaryReport', {
         displayField: 'employee',
         valueField: 'employee'
     }],
+    workFormatter: function(){
+        return 's'
+    },
+    statics: {workRenderer: function(value, metaData, record, rowIdx, colIdx, store, view){
+        if (value == 0) {
+            return '';
+        } else {
+            return Ext.util.Format.number(value, '0.00');
+        }
+    }},
     features: [{
         id: 'group',
         ftype: 'groupingsummary',
-        groupHeaderTpl: '{name}',
+        groupHeaderTpl: Ext.create('Ext.XTemplate',
+            '{rows:this.formatGroup}',
+            {
+                formatGroup: function(rows) {
+                    var row = rows[0].data;
+                    return row.sprint_name + " [" + Ext.util.Format.date(row.sprint_start_date, "d.m.Y") + ' - ' + Ext.util.Format.date(row.sprint_end_date, "d.m.Y") + "]";
+                }
+            }
+        ),
         hideGroupedHeader: true,
         enableGroupingMenu: true
     }, {
@@ -30,11 +48,21 @@ Ext.define('JC.view.SalaryReport', {
         dock: 'bottom'
     }],
     columns: [{
-        header: 'employee',
-        dataIndex: 'employee'
+        header: 'Выполнено',
+        dataIndex: 'resolutiondate',
+        formatter: 'date("d.m.Y")'
     },{
         header: 'issue',
-        dataIndex: 'issue'
+        dataIndex: 'issue',
+        xtype: 'templatecolumn',
+        tpl: new Ext.XTemplate(
+            '<a href="http://df.fun.co.ua:8080/browse/{issue}" ' +
+                'target="_blank" ' +
+                'data-qtip="Начальная оценка: {estimate} {unit}">' +
+                '{issue}' +
+            '</a>'
+        )
+
 
     },{
         header: 'type_name',
@@ -44,29 +72,43 @@ Ext.define('JC.view.SalaryReport', {
         },
         width: 200
     },{
-        header: 'work',
-        dataIndex: 'work',
+        header: 'Часы',
+        dataIndex: 'workHrs',
         align: 'right',
-        renderer: function(value, metaData, record, rowIdx, colIdx, store, view){
-            return value == 0 ? '' : Ext.util.Format.number(value, '0.00');
-        }
+        renderer: JC.utils.Format.moneyFormatter,
+        summaryRenderer: JC.utils.Format.moneyFormatter,
+        summaryType: 'sum'
+    },{
+        header: 'Подкл.',
+        dataIndex: 'workConn',
+        align: 'right',
+        renderer: JC.utils.Format.numberFormatter,
+        summaryRenderer: JC.utils.Format.numberFormatter,
+        summaryType: 'sum'
+    },{
+        header: 'Магистр.',
+        dataIndex: 'workCbl',
+        align: 'right',
+        renderer: JC.utils.Format.numberFormatter,
+        summaryRenderer: JC.utils.Format.numberFormatter,
+        summaryType: 'sum'
     },{
         header: 'rate',
         dataIndex: 'rate',
         align: 'right',
-        renderer: function(value, metaData, record, rowIdx, colIdx, store, view){
-            return (value == 0 || record.get('work') == 0 ) ? '' : Ext.util.Format.number(value, '0.00');
-        }
+        renderer: JC.utils.Format.moneyFormatter
     },{
         header: 'cost',
         dataIndex: 'cost',
         align: 'right',
-        renderer: function(value, metaData, record, rowIdx, colIdx, store, view){
-            return value == 0 ? '' : Ext.util.Format.number(value, '0.00');
-        },
-        summaryRenderer: function(value, summaryData, dataIndex) {
-            return value == 0 ? '' : Ext.util.Format.number(value, '0.00');
-        },
+        renderer: JC.utils.Format.moneyFormatter,
+        summaryRenderer: JC.utils.Format.moneyFormatter,
         summaryType: 'sum'
-    }]
+    }],
+    viewConfig: {
+        stripeRows: false,
+        getRowClass: function(record) {
+            if (record.get('estimate') < record.get('work')) return  'red-row';
+        }
+    }
 });

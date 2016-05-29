@@ -5,7 +5,7 @@ Ext.define('JC.Application', {
         'Ext.tab.Panel',
         'Ext.data.TreeModel',
         'Ext.layout.container.Border',
-
+        'JC.utils.Format',
         'JC.view.Viewport'
     ],
 

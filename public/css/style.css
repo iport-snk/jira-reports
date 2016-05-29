@@ -12,3 +12,17 @@ a {
 #geoobject-baloon .x-toolbar-footer {
     background: white;
 }
+
+.red-row .x-grid-cell, .red-row .x-grid-cell a{
+    font-weight: bold;
+    color:red;
+}
+.link-like {
+    font-weight: bold;
+}
+.link-like:hover {
+    cursor: pointer;
+}
+.x-grid-row-summary .x-grid-cell .x-grid-cell-inner {
+    font-weight: bold;
+}
