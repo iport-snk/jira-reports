@@ -21,7 +21,8 @@ Ext.define('JC.view.Payments', {
             url: '/bill/payments',
             reader: {
                 type: 'json',
-                rootProperty: 'records'
+                rootProperty: 'records',
+                keepRawData: true
             }
         },
         autoLoad: false

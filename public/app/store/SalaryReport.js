@@ -12,7 +12,8 @@ Ext.define('JC.store.SalaryReport', {
         {name: 'time_spent'},
         {name: 'sprint_id'},
         {name: 'sprint_name'},
-        {name: 'created', type: 'date'}
+        {name: 'created', type: 'date'},
+        {name: 'resolutiondate', type: 'date'}
     ],
     groupField: 'sprint_id',
     storeId: 'SalaryReport',

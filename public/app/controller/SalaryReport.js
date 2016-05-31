@@ -5,16 +5,6 @@ Ext.define('JC.controller.SalaryReport', {
         selector: 'SalaryReport'
     }],
     config: {
-        listen: {
-            store: {
-                '#SalaryReport' : {
-                    load: function(store) {
-                        var grid = this.getSalaryReport();
-                        grid.reconfigure(store);
-                    }
-                }
-            }
-        },
         control: {
             'SalaryReport #employeeSelector' : {
                 change: function(combo, value){
