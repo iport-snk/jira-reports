@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97bad912-3d6f-4fa6-b2bf-4189ef0c79d2" name="Default" comment="" />
+    <list default="true" id="97bad912-3d6f-4fa6-b2bf-4189ef0c79d2" name="Default" comment="added SimManager - configuring through environment variable">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/plugin/ColumnFactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ext-6.0.2/ux/ajax/DataSimlet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/view/Document.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/store/FieldConfigurations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ext-6.0.2/ux/ajax/JsonSimlet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ext-6.0.2/ux/ajax/SimManager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ext-6.0.2/ux/ajax/SimXhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ext-6.0.2/ux/ajax/Simlet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ext-6.0.2/ux/ajax/XmlSimlet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/init-sim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/controller/SalaryReport.js" afterPath="$PROJECT_DIR$/public/app/controller/SalaryReport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/view/SalaryReport.js" afterPath="$PROJECT_DIR$/public/app/view/SalaryReport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/view/Viewport.js" afterPath="$PROJECT_DIR$/public/app/view/Viewport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jira-extracting-1.iml" afterPath="$PROJECT_DIR$/.idea/jira-extracting-1.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jira_extracting_1_node_modules.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jira_extracting_1_node_modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/data/mock-data.js" afterPath="$PROJECT_DIR$/public/app/data/mock-data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="jira-extracting-1.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,120 +38,115 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="jira-extracting-1" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="986">
-              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Issues.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Issues.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/store/Issues.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="493">
-              <caret line="22" column="18" selection-start-line="15" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SalaryReport.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/app/store/SalaryReport.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53543305" vertical-offset="0" max-vertical-offset="544">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/Application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="408">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SalaryReport.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/view/SalaryReport.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1207">
-              <caret line="20" column="37" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskList.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/view/TaskList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="918">
-              <caret line="23" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="3" />
-              <folding>
-                <marker date="1462520291319" expanded="true" signature="301:408" placeholder="..." />
-                <marker date="1462520291319" expanded="true" signature="442:588" placeholder="..." />
-                <marker date="1462520291319" expanded="true" signature="634:672" placeholder="..." />
-                <marker date="1462520291319" expanded="true" signature="795:880" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskRow.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/view/TaskRow.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1139">
-              <caret line="34" column="104" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="104" />
-              <folding>
-                <marker date="1462437532352" expanded="true" signature="377:479" placeholder="..." />
-                <marker date="1462437532352" expanded="true" signature="514:606" placeholder="..." />
-                <marker date="1462437532352" expanded="true" signature="653:691" placeholder="..." />
-                <marker date="1462437532352" expanded="true" signature="777:850" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Viewport.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/view/Viewport.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="680">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="340">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.071429">
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Document.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/view/Document.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/view/Task.js">
+      <file leaf-file-name="FieldConfigurations.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/store/FieldConfigurations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+            <state vertical-scroll-proportion="0.46655232">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Viewport.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/view/Viewport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColumnFactory.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/plugin/ColumnFactory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="10" selection-start-line="13" selection-start-column="31" selection-end-line="22" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/view/TaskList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="3" />
+              <folding>
+                <marker date="1464102481866" expanded="true" signature="301:408" placeholder="..." />
+                <marker date="1464102481866" expanded="true" signature="442:588" placeholder="..." />
+                <marker date="1464102481866" expanded="true" signature="634:672" placeholder="..." />
+                <marker date="1464102481866" expanded="true" signature="795:880" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init-sim.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/init-sim.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalaryReport.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/view/SalaryReport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="5" selection-start-line="49" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalaryReport.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/controller/SalaryReport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -135,40 +154,60 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/public/app/model/Issue.js" />
-        <option value="$PROJECT_DIR$/public/app/store/Labels.js" />
-        <option value="$PROJECT_DIR$/public/app/store/LabelsToIssues.js" />
-        <option value="$PROJECT_DIR$/public/app/model/Label.js" />
-        <option value="$PROJECT_DIR$/public/app/store/Issues.js" />
-        <option value="$PROJECT_DIR$/public/app/view/TaskRow.js" />
-        <option value="$PROJECT_DIR$/public/app/view/Filters.js" />
-        <option value="$PROJECT_DIR$/public/app/view/Task.js" />
-        <option value="$PROJECT_DIR$/public/app/view/TaskList.js" />
-        <option value="$PROJECT_DIR$/public/app/Application.js" />
-        <option value="$PROJECT_DIR$/public/app/view/Viewport.js" />
+        <option value="$PROJECT_DIR$/public/ext-5.1.0/simlets.js" />
+        <option value="$PROJECT_DIR$/public/ext-6.0.1/ext-theme-crisp/ext-theme-crisp-all.css" />
         <option value="$PROJECT_DIR$/public/app/view/SalaryReport.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/public/app/store/SalaryReport.js" />
+        <option value="$PROJECT_DIR$/public/app/controller/SalaryReport.js" />
+        <option value="$PROJECT_DIR$/public/app/data/mock-data.js" />
+        <option value="$PROJECT_DIR$/public/ext-6.0.1/ux/ajax/SimManager.js" />
+        <option value="$PROJECT_DIR$/public/ext-6.0.1/ux/ajax/JsonSimlet.js" />
+        <option value="$PROJECT_DIR$/public/app/init-sim.js" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/public/app/view/Viewport.js" />
+        <option value="$PROJECT_DIR$/public/app/plugin/ColumnFactory.js" />
+        <option value="$PROJECT_DIR$/public/app/view/Document.js" />
+        <option value="$PROJECT_DIR$/public/app/store/DocumentConfigurations.js" />
+        <option value="$PROJECT_DIR$/public/app/store/FieldConfigurations.js" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="936" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -194,7 +233,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -209,7 +247,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jira-extracting-1" />
+              <option name="myItemId" value="jira-reports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -219,7 +257,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jira-extracting-1" />
+              <option name="myItemId" value="jira-reports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -233,7 +271,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jira-extracting-1" />
+              <option name="myItemId" value="jira-reports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -247,7 +285,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jira-extracting-1" />
+              <option name="myItemId" value="jira-reports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -261,7 +299,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jira-extracting-1" />
+              <option name="myItemId" value="jira-reports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -279,7 +317,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jira-extracting-1" />
+              <option name="myItemId" value="jira-reports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -301,7 +339,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jira-extracting-1" />
+              <option name="myItemId" value="jira-reports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -323,7 +361,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jira-extracting-1" />
+              <option name="myItemId" value="jira-reports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -335,12 +373,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jira-extracting-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jira-reports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,47 +407,853 @@
     <property name="options.searchVisible" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="P:\Projects\Iport\jira-reports\jira-reports\public\ext-6.0.2" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/app/Application.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/app/controller/SalaryReport.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/app/store/SalaryReport.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/app/view/Payments.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/app/view/SalaryReport.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/css/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/routes/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/index.ejs</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/app/utils/Format.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-all.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/ext-theme-crisp-all.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/ext-theme-crisp-all_01.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/ext-theme-crisp-all_02.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-arrow-open-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-arrow-open.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-scroll-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-scroll-right.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-split-arrow-open-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-split-arrow-open.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-split-arrow-over-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-split-arrow-over.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-split-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/breadcrumb/default-split-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn-group/btn-group-default-framed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn-group/btn-group-default-framed-notitle-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn-group/btn-group-default-framed-notitle-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn-group/btn-group-default-framed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-disabled-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-disabled-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-focus-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-focus-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-focus-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-focus-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-large-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-disabled-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-disabled-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-focus-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-focus-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-focus-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-focus-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-medium-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-disabled-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-disabled-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-focus-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-focus-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-focus-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-focus-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-small-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-disabled-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-disabled-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-focus-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-focus-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-focus-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-focus-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-large-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-disabled-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-disabled-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-focus-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-focus-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-focus-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-focus-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-medium-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-disabled-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-disabled-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-focus-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-focus-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-focus-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-focus-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-default-toolbar-small-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-large-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-large-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-large-focus-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-large-focus-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-large-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-large-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-large-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-large-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-medium-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-medium-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-medium-focus-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-medium-focus-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-medium-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-medium-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-medium-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-medium-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-small-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-small-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-small-focus-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-small-focus-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-small-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-small-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-small-pressed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/btn/btn-plain-toolbar-small-pressed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-large-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-large-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-large-s-arrow-b-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-large-s-arrow-b.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-large-s-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-large-s-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-medium-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-medium-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-medium-s-arrow-b-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-medium-s-arrow-b.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-medium-s-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-medium-s-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-small-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-small-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-small-s-arrow-b-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-small-s-arrow-b.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-small-s-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-small-s-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-large-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-large-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-large-s-arrow-b-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-large-s-arrow-b.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-large-s-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-large-s-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-medium-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-medium-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-medium-s-arrow-b-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-medium-s-arrow-b.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-medium-s-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-medium-s-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-small-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-small-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-small-s-arrow-b-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-small-s-arrow-b.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-small-s-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/default-toolbar-small-s-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/grid-cell-small-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/grid-cell-small-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/grid-cell-small-s-arrow-b.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/grid-cell-small-s-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/grid-cell-small-s-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-large-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-large-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-large-s-arrow-b-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-large-s-arrow-b.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-large-s-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-large-s-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-medium-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-medium-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-medium-s-arrow-b-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-medium-s-arrow-b.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-medium-s-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-medium-s-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-small-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-small-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-small-s-arrow-b-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-small-s-arrow-b.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-small-s-arrow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/button/plain-toolbar-small-s-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/datepicker/arrow-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/datepicker/arrow-right.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/datepicker/month-arrow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/dd/drop-add.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/dd/drop-no.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/dd/drop-yes.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/editor/tb-sprite.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/fieldset/collapse-tool.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/checkbox.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/clear-trigger-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/clear-trigger.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/date-trigger-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/date-trigger.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/exclamation.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/radio.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/search-trigger-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/search-trigger.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/spinner-down-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/spinner-down.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/spinner-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/spinner-up-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/spinner-up.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/spinner.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/tag-field-item-close.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/trigger-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/form/trigger.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/col-move-bottom.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/col-move-top.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/columns.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/dd-insert-arrow-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/dd-insert-arrow-right.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/dirty-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/dirty.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/drop-no.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/drop-yes.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/filters/equals.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/filters/find.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/filters/greater_than.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/filters/less_than.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/group-by.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/group-collapse.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/group-expand.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/hd-pop.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/hmenu-asc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/hmenu-desc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/hmenu-lock.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/hmenu-unlock.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/loading.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/page-first.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/page-last.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/page-next.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/page-prev.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/pick-button.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/refresh.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/sort_asc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/grid/sort_desc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/loadmask/loading.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/magnify.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/menu/default-checked.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/menu/default-group-checked.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/menu/default-menu-parent-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/menu/default-menu-parent.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/menu/default-scroll-bottom.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/menu/default-scroll-top.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/menu/default-unchecked.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-bottom-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-bottom-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-collapsed-bottom-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-collapsed-bottom-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-collapsed-left-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-collapsed-left-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-collapsed-left-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-collapsed-right-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-collapsed-right-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-collapsed-right-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-collapsed-top-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-collapsed-top-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-left-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-left-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-left-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-right-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-right-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-right-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-top-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-default-framed-top-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-bottom-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-bottom-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-collapsed-bottom-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-collapsed-bottom-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-collapsed-left-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-collapsed-left-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-collapsed-left-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-collapsed-right-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-collapsed-right-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-collapsed-right-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-collapsed-top-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-collapsed-top-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-left-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-left-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-left-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-right-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-right-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-right-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-top-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel-header/panel-header-light-framed-top-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel/panel-default-framed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel/panel-default-framed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel/panel-light-framed-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/panel/panel-light-framed-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/shared/icon-error.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/shared/icon-info.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/shared/icon-question.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/shared/icon-warning.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/sizer/e-handle.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/sizer/ne-handle.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/sizer/nw-handle.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/sizer/s-handle.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/sizer/se-handle.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/sizer/sw-handle.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/slider/slider-bg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/slider/slider-thumb.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/slider/slider-v-bg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/slider/slider-v-thumb.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab-bar/default-plain-scroll-bottom.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab-bar/default-plain-scroll-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab-bar/default-plain-scroll-right.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab-bar/default-plain-scroll-top.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab-bar/default-scroll-bottom.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab-bar/default-scroll-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab-bar/default-scroll-right.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab-bar/default-scroll-top.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-active-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-active-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-active-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-disabled-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-disabled-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-disabled-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-focus-active-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-focus-active-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-focus-active-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-focus-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-focus-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-focus-over-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-focus-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-over-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-bottom-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-close.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-active-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-active-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-active-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-disabled-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-disabled-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-disabled-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-focus-active-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-focus-active-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-focus-active-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-focus-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-focus-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-focus-over-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-focus-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-over-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-left-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-active-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-active-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-active-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-disabled-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-disabled-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-disabled-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-focus-active-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-focus-active-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-focus-active-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-focus-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-focus-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-focus-over-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-focus-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-over-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-right-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-active-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-active-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-active-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-disabled-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-disabled-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-disabled-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-focus-active-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-focus-active-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-focus-active-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-focus-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-focus-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-focus-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-focus-over-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-focus-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-focus-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-over-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-over-fbg.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-over-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tab/tab-default-top-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tip/tip-default-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tip/tip-default-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tip/tip-form-invalid-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tip/tip-form-invalid-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/toolbar/default-more-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/toolbar/default-more.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/toolbar/default-scroll-bottom.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/toolbar/default-scroll-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/toolbar/default-scroll-right.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/toolbar/default-scroll-top.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/toolbar/footer-more-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/toolbar/footer-more.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/toolbar/footer-scroll-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/toolbar/footer-scroll-right.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tools/tool-sprites-dark.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tools/tool-sprites.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/arrows-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/arrows.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-above.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-add.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-add.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-append.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-below.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-between.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-between.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-no.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-no.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-over.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-over.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-under.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-under.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-yes.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/drop-yes.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-end-minus-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-end-minus.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-end-plus-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-end-plus.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-end-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-end.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-line-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-line.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-minus-nl-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-minus-nl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-minus-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-minus.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-plus-nl-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-plus-nl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-plus-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-plus.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/elbow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/folder-open-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/folder-open.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/folder-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/folder.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/leaf-rtl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/leaf.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/tree/loading.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/util/splitter/mini-bottom.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/util/splitter/mini-left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/util/splitter/mini-right.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/util/splitter/mini-top.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-bottom-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-bottom-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-collapsed-bottom-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-collapsed-bottom-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-collapsed-left-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-collapsed-left-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-collapsed-left-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-collapsed-right-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-collapsed-right-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-collapsed-right-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-collapsed-top-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-collapsed-top-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-left-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-left-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-left-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-right-corners-rtl.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-right-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-right-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-top-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window-header/window-header-default-top-sides.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window/toast/fade-blue.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window/toast/fader.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window/toast/icon16_error.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window/toast/icon16_info.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window/window-default-corners.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/ext-6.0.2/ext-theme-crisp/images/window/window-default-sides.gif</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Node.js.bin\www">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="name" value="Dart" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="" />
-      <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="Chrome" />
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
     <list size="1">
@@ -407,31 +1268,46 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="97bad912-3d6f-4fa6-b2bf-4189ef0c79d2" name="Default" comment="" />
       <created>1461517441042</created>
+      <option name="number" value="Default" />
       <updated>1461517441042</updated>
+      <workItem from="1464185096752" duration="5915000" />
+      <workItem from="1464703480074" duration="9426000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15341000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="936" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29027778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DBHelper" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28944564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39823982" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -446,133 +1322,36 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
+    <MESSAGE value="ext-6.0.1" />
+    <MESSAGE value="added SimManager - configuring through environment variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="added SimManager - configuring through environment variable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="28" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="port" />
+        <watch expression="process.env.MOCKING" language="JavaScript" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/store/Issues.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="493">
-          <caret line="22" column="18" selection-start-line="15" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/store/SalaryReport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="544">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/Application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="408">
+        <state vertical-scroll-proportion="0.0">
           <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/SalaryReport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1207">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/TaskList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="918">
-          <caret line="23" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="3" />
-          <folding>
-            <marker date="1462520291319" expanded="true" signature="301:408" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="442:588" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="634:672" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="795:880" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/TaskRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1139">
-          <caret line="34" column="104" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="104" />
-          <folding>
-            <marker date="1462437532352" expanded="true" signature="377:479" placeholder="..." />
-            <marker date="1462437532352" expanded="true" signature="514:606" placeholder="..." />
-            <marker date="1462437532352" expanded="true" signature="653:691" placeholder="..." />
-            <marker date="1462437532352" expanded="true" signature="777:850" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/Viewport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="680">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="340">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/Task.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="338" max-vertical-offset="952">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/store/Issues.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="493">
-          <caret line="22" column="18" selection-start-line="15" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/store/SalaryReport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="544">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/Application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="408">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/SalaryReport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1207">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
           <folding />
         </state>
@@ -580,33 +1359,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/TaskList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="918">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="3" />
           <folding>
-            <marker date="1462520291319" expanded="true" signature="301:408" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="442:588" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="634:672" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="795:880" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="301:408" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="442:588" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="634:672" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="795:880" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/TaskRow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1139">
+        <state vertical-scroll-proportion="0.0">
           <caret line="34" column="104" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="104" />
-          <folding>
-            <marker date="1462437532352" expanded="true" signature="377:479" placeholder="..." />
-            <marker date="1462437532352" expanded="true" signature="514:606" placeholder="..." />
-            <marker date="1462437532352" expanded="true" signature="653:691" placeholder="..." />
-            <marker date="1462437532352" expanded="true" signature="777:850" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/Viewport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="680">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding />
         </state>
@@ -614,7 +1387,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="340">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
@@ -622,15 +1395,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/Task.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+        <state vertical-scroll-proportion="0.0">
           <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
           <folding />
         </state>
@@ -638,14 +1410,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/Filters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="901">
+        <state vertical-scroll-proportion="0.0">
           <caret line="46" column="5" selection-start-line="4" selection-start-column="12" selection-end-line="46" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/store/Issues.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="306">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding />
         </state>
@@ -653,49 +1425,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/store/Labels.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/Application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="408">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/TaskList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1139">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
           <folding>
-            <marker date="1462520291319" expanded="true" signature="301:408" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="442:588" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="634:672" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="795:880" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="301:408" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="442:588" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="634:672" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="795:880" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/Issue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="26" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/Label.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="221">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
@@ -703,7 +1474,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="493">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
@@ -711,178 +1482,274 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1309">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v5.11.0-src/core-modules-sources/lib/internal/streams/lazy_transform.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="166" max-vertical-offset="731">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/request.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6751592" vertical-offset="7842" max-vertical-offset="8313">
+        <state vertical-scroll-proportion="0.6751592">
           <caret line="486" column="4" selection-start-line="486" selection-start-column="4" selection-end-line="486" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="471">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/statuses/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28874734" vertical-offset="0" max-vertical-offset="1122">
+        <state vertical-scroll-proportion="0.28874734">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1462">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="471">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/Label.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/store/Labels.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/Map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44990548" vertical-offset="0" max-vertical-offset="529">
+        <state vertical-scroll-proportion="0.44990548">
           <caret line="14" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/Issue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/Filters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+        <state vertical-scroll-proportion="0.0">
           <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/Task.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/TaskRow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1139">
+        <state vertical-scroll-proportion="0.0">
           <caret line="34" column="104" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="104" />
-          <folding>
-            <marker date="1462437532352" expanded="true" signature="377:479" placeholder="..." />
-            <marker date="1462437532352" expanded="true" signature="514:606" placeholder="..." />
-            <marker date="1462437532352" expanded="true" signature="653:691" placeholder="..." />
-            <marker date="1462437532352" expanded="true" signature="777:850" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/TaskList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-          <caret line="23" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="3" />
-          <folding>
-            <marker date="1462520291319" expanded="true" signature="301:408" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="442:588" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="634:672" placeholder="..." />
-            <marker date="1462520291319" expanded="true" signature="795:880" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/Application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+        <state vertical-scroll-proportion="0.0">
           <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/store/SalaryReport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/Viewport.js">
+    <entry file="file://$PROJECT_DIR$/public/ext-5.1.0/ext-all-debug.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state vertical-scroll-proportion="465.38367">
+          <caret line="13414" column="25" selection-start-line="13414" selection-start-column="16" selection-end-line="13414" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0327553">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/store/Issues.js">
+    <entry file="file://$PROJECT_DIR$/public/ext-6.0.1/ext-theme-crisp/ext-theme-crisp-all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="22" column="18" selection-start-line="15" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+    <entry file="file://$PROJECT_DIR$/public/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="340">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/SalaryReport.js">
+    <entry file="file://$PROJECT_DIR$/public/ext-6.0.1/ux/ajax/JsonSimlet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1207">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.23327616">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ext-6.0.1/ux/ajax/SimManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17495711">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/data/mock-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ext-6.0.1/ux/ajax/DataSimlet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.385935">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/store/Labels.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3207547">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ext-6.0.2/ux/ajax/Simlet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.34991422">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="986">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="5" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/store/SalaryReport.js">
+    <entry file="file://$PROJECT_DIR$/public/app/init-sim.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53543305" vertical-offset="0" max-vertical-offset="544">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.071429">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/view/TaskList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="3" />
+          <folding>
+            <marker date="1464102481866" expanded="true" signature="301:408" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="442:588" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="634:672" placeholder="..." />
+            <marker date="1464102481866" expanded="true" signature="795:880" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/view/Viewport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/controller/SalaryReport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/view/SalaryReport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="5" selection-start-line="49" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/store/Issues.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/plugin/ColumnFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="10" selection-start-line="13" selection-start-column="31" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/view/Document.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/store/FieldConfigurations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46655232">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-

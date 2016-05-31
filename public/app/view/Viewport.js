@@ -3,12 +3,15 @@ Ext.define('JC.view.Viewport', {
     requires:[
         'Ext.tab.Panel',
         'Ext.layout.container.Border',
+        
+        'JC.plugin.ColumnFactory',
 
         'JC.view.SalaryReport',
         'JC.view.TaskList',
         'JC.view.TaskRow',
         'JC.view.Payments',
-        'JC.view.PaymentTotals'
+        'JC.view.PaymentTotals',
+        'JC.view.Document'
     ],
 
     layout: {
@@ -24,6 +27,9 @@ Ext.define('JC.view.Viewport', {
         },{
             title: 'Плaтежи',
             xtype: 'Payments'
+        },{
+            title: 'Documents',
+            xtype: 'Document'
         }/*,{
             title: 'Фильтры',
             xtype: 'Filters'

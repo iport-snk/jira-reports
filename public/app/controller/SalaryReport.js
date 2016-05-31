@@ -7,6 +7,9 @@ Ext.define('JC.controller.SalaryReport', {
     config: {
         control: {
             'SalaryReport #employeeSelector' : {
+                render: function(combo){
+                    combo.store.load();
+                },
                 change: function(combo, value){
                     var record = combo.getSelectedRecord(),
                         ctrl = this;
