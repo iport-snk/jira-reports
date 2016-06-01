@@ -4,6 +4,7 @@ Ext.define('JC.view.Payments', {
     requires: ['Ext.grid.filters.Filters'],
     plugins: 'gridfilters',
     stateId: 'stateful-payments-grid',
+    forceFit: true,
     store: Ext.create('Ext.data.Store', {
         storeId: 'Payments',
         fields: [
