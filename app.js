@@ -14,7 +14,7 @@ var pool  = mysql.createPool({
     host     : 'df.fun.co.ua',
     user     : 'oleg',
     password : 'Mutabor73',
-    database: 'jiradb'
+    database: 'jira_reports'
 });
 
 var app = express();
