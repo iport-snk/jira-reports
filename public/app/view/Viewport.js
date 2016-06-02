@@ -27,10 +27,10 @@ Ext.define('JC.view.Viewport', {
         },{
             title: 'Плaтежи',
             xtype: 'Payments'
-        },{
+        }/*,{
             title: 'Documents',
             xtype: 'Document'
-        }/*,{
+        },{
             title: 'Фильтры',
             xtype: 'Filters'
         },{
