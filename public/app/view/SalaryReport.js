@@ -13,7 +13,7 @@ Ext.define('JC.view.SalaryReport', {
                 url: '/workers',
                 reader: {type: 'json'}
             },
-            autoLoad: true
+            autoLoad: false
         }),
         queryMode: 'local',
         displayField: 'employee',
