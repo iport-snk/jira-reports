@@ -3,8 +3,6 @@ Ext.define('JC.view.Viewport', {
     requires:[
         'Ext.tab.Panel',
         'Ext.layout.container.Border',
-        
-        'JC.plugin.ColumnFactory',
 
         'JC.view.SalaryReport',
         'JC.view.TaskList',
@@ -27,10 +25,15 @@ Ext.define('JC.view.Viewport', {
         },{
             title: 'Плaтежи',
             xtype: 'Payments'
-        }/*,{
-            title: 'Documents',
-            xtype: 'Document'
         },{
+            title: 'Documents',
+            xtype: 'Document',
+            params: {
+                type: "Document.Invoice",
+                id: 1
+            }
+
+        }/*,{
             title: 'Фильтры',
             xtype: 'Filters'
         },{

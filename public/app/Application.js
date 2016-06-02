@@ -6,12 +6,13 @@ Ext.define('JC.Application', {
         'Ext.data.TreeModel',
         'Ext.layout.container.Border',
         'JC.utils.Format',
+        'JC.utils.ComponentFactory',
         'JC.view.Viewport'
     ],
 
     models: [],
     controllers: ['SalaryReport', 'Payments'],
-    stores: ['SalaryReport', 'Labels'],
+    stores: ['SalaryReport', 'Labels', 'Fields'],
     launch: function () {
         Ext.create('JC.view.Viewport');
     }
