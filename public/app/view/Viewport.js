@@ -28,10 +28,7 @@ Ext.define('JC.view.Viewport', {
         },{
             title: 'Documents',
             xtype: 'Document',
-            params: {
-                type: "Document.Invoice",
-                id: 1
-            }
+            url: '/document/invoice/1'
 
         }/*,{
             title: 'Фильтры',
