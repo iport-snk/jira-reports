@@ -9,6 +9,7 @@ Ext.define('JC.view.Viewport', {
         'JC.view.TaskRow',
         'JC.view.Payments',
         'JC.view.PaymentTotals',
+        'JC.view.Registry',
         'JC.view.Document'
     ],
 
@@ -25,6 +26,11 @@ Ext.define('JC.view.Viewport', {
         },{
             title: 'Плaтежи',
             xtype: 'Payments'
+        },{
+            title: 'Registry',
+            xtype: 'Registry',
+            url: '/registry/invoices'
+
         },{
             title: 'Documents',
             xtype: 'Document',
