@@ -31,12 +31,12 @@ Ext.define('JC.view.Viewport', {
             xtype: 'Registry',
             url: '/registry/invoices'
 
-        },{
+        }/*,{
             title: 'Documents',
             xtype: 'Document',
             url: '/document/invoice/1'
 
-        }/*,{
+        },{
             title: 'Фильтры',
             xtype: 'Filters'
         },{

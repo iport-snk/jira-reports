@@ -8,5 +8,10 @@ Ext.define('JC.utils.ComponentFactory', {
             data: data,
             autoLoad: false
         });
+    },
+    createColumns: function(columns ){
+        return columns.filter(function(column){
+            return !Ext.isEmpty(column.header);
+        });
     }
 });

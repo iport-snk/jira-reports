@@ -17,6 +17,16 @@ var pool  = mysql.createPool({
     database: 'jira_reports'
 });
 
+
+/*var r = require('rethinkdb');
+r.connect({
+    host: 'df.fun.co.ua',
+    port: 28015,
+    db: 'iport'
+}, function(err, connection) {
+
+});*/
+
 var app = express();
 
 // view engine setup

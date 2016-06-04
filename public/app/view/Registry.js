@@ -14,6 +14,26 @@ Ext.define('JC.view.Registry', {
             text:'Menu Item 3'
         }]
     }],
+    listeners: {
+        rowkeydown: function(row, record, tr, rowIndex, e, eOpts){
+            console.log(e.keyCode)
+        },
+        rowdblclick: function(row, record, tr, rowIndex, e, eOpts){
+            var tabs = this.up('tabpanel'),
+                id = record.get('documentId'),
+                tab = tabs.down('Document[url="' + id + '"]');
+
+            if (!tab) {
+                tab = tabs.add({
+                    title: 'Tab ' + (tabs.items.length + 1),
+                    xtype: 'Document',
+                    url: id,
+                    closable: true
+                });
+            }
+            tabs.setActiveTab(tab);
+        }
+    },
     initComponent: function() {
         var doc = this;
         this.callParent();
@@ -22,8 +42,10 @@ Ext.define('JC.view.Registry', {
                 url: doc.url
             }).then(function(response, opts) {
                 Ext.apply(doc, Ext.decode(response.responseText));
-                var store = JC.utils.ComponentFactory.createStore(doc.schema.grid, doc.data.grid.rows);
-                doc.reconfigure(store, doc.schema.grid);
+                doc.reconfigure(
+                    JC.utils.ComponentFactory.createStore(doc.schema.grid, doc.data.grid.rows),
+                    JC.utils.ComponentFactory.createColumns(doc.schema.grid)
+                );
 
             });
         });
