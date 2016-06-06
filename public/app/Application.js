@@ -7,7 +7,8 @@ Ext.define('JC.Application', {
         'Ext.layout.container.Border',
         'JC.utils.Format',
         'JC.utils.ComponentFactory',
-        'JC.view.Viewport'
+        'JC.view.Viewport',
+        'JC.view.DirectoryField'
     ],
 
     models: [],

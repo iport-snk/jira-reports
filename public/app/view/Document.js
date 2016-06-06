@@ -19,6 +19,25 @@ Ext.define('JC.view.Document', {
                     items: doc.schema.form
                 },{
                     xtype: 'grid',
+                    tbar:[{
+                        text: '+',
+                        handler: function(){
+                            var picker = Ext.create('JC.view.Directory',{
+                                floating: true,
+                                modal: true,
+                                width: 800,
+                                height: 400
+                            });
+                            picker.show();
+
+                        }
+                    }],
+                    selModel: 'cellmodel',
+
+                    plugins: {
+                        ptype: 'cellediting',
+                        clicksToEdit: 1
+                    },
                     columns: doc.schema.grid,
                     store: JC.utils.ComponentFactory.createStore(doc.schema.grid, doc.data.grid.rows),
                     forceFit: true

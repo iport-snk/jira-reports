@@ -10,7 +10,8 @@ Ext.define('JC.view.Viewport', {
         'JC.view.Payments',
         'JC.view.PaymentTotals',
         'JC.view.Registry',
-        'JC.view.Document'
+        'JC.view.Document',
+        'JC.view.Directory'
     ],
 
     layout: {
@@ -32,6 +33,11 @@ Ext.define('JC.view.Viewport', {
             url: '/registry/invoices'
 
         }/*,{
+            title: 'Products',
+            xtype: 'Directory',
+            url: '/directory/products'
+
+         },{
             title: 'Documents',
             xtype: 'Document',
             url: '/document/invoice/1'
