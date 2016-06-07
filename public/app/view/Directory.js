@@ -98,7 +98,13 @@ Ext.define('JC.view.Directory', {
             }]
         }
     },
+    initEvents: function(){
+        this.callParent();
+        // TODO: need to find out how value should correctly come here
+
+    },
     setValue : function(value){
+
         this.value = value;
         return this.update(this.value);
     },
