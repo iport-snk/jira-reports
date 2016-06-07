@@ -52,6 +52,10 @@ Ext.define('JC.view.DirectoryField', {
             me.collapse();
         }
 
+    },
+    onExpand: function() {
+        var value = this.getValue();
+        this.picker.setValue(value);
     }
 
-})
+});
