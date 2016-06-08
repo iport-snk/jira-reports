@@ -38,8 +38,8 @@ Ext.define('JC.view.Document', {
                         ptype: 'cellediting',
                         clicksToEdit: 1
                     },
-                    columns: doc.schema.grid,
-                    store: JC.utils.ComponentFactory.createStore(doc.schema.grid, doc.data.grid.rows),
+                    columns: JC.utils.ComponentFactory.createColumns(doc),
+                    store: JC.utils.ComponentFactory.createStore(doc),
                     forceFit: true
                 }]);
 

@@ -14,6 +14,7 @@ Ext.define('JC.view.DirectoryField', {
         var me = this;
 
         var picker = Ext.create('JC.view.Directory',{
+            uri: me.uri,
             floating: true,
             modal: true,
             width: 800,
@@ -34,15 +35,21 @@ Ext.define('JC.view.DirectoryField', {
     doAlign: function(){
         // don't want to align
     },
-    setValue: function(par) {
-        var v = par;
+    setValue: function(value) {
+        var me = this,
+            displayValue;
 
-        if (par instanceof Ext.data.Model) {
-            v = par.get(this.displayField);
-        } else if (Ext.isObject(par)) {
-            v = par[this.displayField];
+        if (value instanceof Ext.data.Model) {
+            displayValue = value.get(this.displayField);
+        } else if (Ext.isObject(value)) {
+            displayValue = value[this.displayField];
         };
-         this.callParent([v]);
+
+        me.value = value;
+        me.setRawValue(displayValue);
+    },
+    getValue: function(){
+        return this.value;
     },
     onSelect: function(m, node) {
         var me = this;
@@ -54,8 +61,7 @@ Ext.define('JC.view.DirectoryField', {
 
     },
     onExpand: function() {
-        var value = this.getValue();
-        this.picker.setValue(value);
+        this.picker.setValue(this.value);
     }
 
 });

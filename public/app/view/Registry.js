@@ -43,8 +43,8 @@ Ext.define('JC.view.Registry', {
             }).then(function(response, opts) {
                 Ext.apply(doc, Ext.decode(response.responseText));
                 doc.reconfigure(
-                    JC.utils.ComponentFactory.createStore(doc.schema.grid, doc.data.grid.rows),
-                    JC.utils.ComponentFactory.createColumns(doc.schema.grid)
+                    JC.utils.ComponentFactory.createStore(doc),
+                    JC.utils.ComponentFactory.createColumns(doc)
                 );
 
             });
