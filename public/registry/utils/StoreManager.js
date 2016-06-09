@@ -1,4 +1,4 @@
-Ext.define('JC.utils.StoreManager', {
+Ext.define('Doc.utils.StoreManager', {
     singleton: true,
     getStore: function(uri) {
         var deferred = new Ext.Deferred(),
@@ -11,8 +11,8 @@ Ext.define('JC.utils.StoreManager', {
                 url: uri
             }).then(function(response, opts) {
                 var doc =  Ext.decode(response.responseText),
-                    columns = JC.utils.ComponentFactory.createColumns(doc),
-                    store = JC.utils.ComponentFactory.createStore(doc, uri);
+                    columns = Doc.utils.ComponentFactory.createColumns(doc),
+                    store = Doc.utils.ComponentFactory.createStore(doc, uri);
 
                 store.columns = columns;
                 deferred.resolve(store);

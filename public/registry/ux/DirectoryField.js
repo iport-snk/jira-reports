@@ -1,4 +1,4 @@
-Ext.define('JC.view.DirectoryField', {
+Ext.define('Doc.ux.DirectoryField', {
     extend: 'Ext.form.field.Picker',
     alias: 'widget.directoryfield',
 
@@ -13,7 +13,7 @@ Ext.define('JC.view.DirectoryField', {
     createPicker: function() {
         var me = this;
 
-        var picker = Ext.create('JC.view.Directory',{
+        var picker = Ext.create('Doc.ux.Directory',{
             uri: me.uri,
             floating: true,
             modal: true,

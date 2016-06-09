@@ -1,4 +1,4 @@
-Ext.define('JC.view.Directory', {
+Ext.define('Doc.ux.Directory', {
     extend: 'Ext.tree.Panel',
     alias: 'widget.Directory',
     border: true,
@@ -76,12 +76,12 @@ Ext.define('JC.view.Directory', {
      */
     update : function(date){
         var me = this;
-        JC.utils.StoreManager.getStore(me.uri).then(function(store){
+        Doc.utils.StoreManager.getStore(me.uri).then(function(store){
             me.reconfigure(store, store.columns);
 
         });
 
         return me;
-    },
+    }
 
 });

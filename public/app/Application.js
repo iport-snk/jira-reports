@@ -1,3 +1,4 @@
+Ext.Loader.setPath('Doc', '/registry');
 Ext.define('JC.Application', {
     extend: 'Ext.app.Application',
     namespace: 'JC',
@@ -5,11 +6,19 @@ Ext.define('JC.Application', {
         'Ext.tab.Panel',
         'Ext.data.TreeModel',
         'Ext.layout.container.Border',
+        'Ext.ux.TreePicker',
+
         'JC.utils.Format',
-        'JC.utils.ComponentFactory',
-        'JC.utils.StoreManager',
-        'JC.view.Viewport',
-        'JC.view.DirectoryField'
+
+        'Doc.utils.ComponentFactory',
+        'Doc.utils.StoreManager',
+        'Doc.ux.DirectoryField',
+        'Doc.ux.Registry',
+        'Doc.ux.Document',
+        'Doc.ux.Directory',
+
+
+        'JC.view.Viewport'
     ],
 
     models: [],

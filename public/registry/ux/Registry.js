@@ -1,4 +1,4 @@
-Ext.define('JC.view.Registry', {
+Ext.define('Doc.ux.Registry', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.Registry',
     forceFit: true,
@@ -43,8 +43,8 @@ Ext.define('JC.view.Registry', {
             }).then(function(response, opts) {
                 Ext.apply(doc, Ext.decode(response.responseText));
                 doc.reconfigure(
-                    JC.utils.ComponentFactory.createStore(doc),
-                    JC.utils.ComponentFactory.createColumns(doc)
+                    Doc.utils.ComponentFactory.createStore(doc),
+                    Doc.utils.ComponentFactory.createColumns(doc)
                 );
 
             });
