@@ -225,13 +225,18 @@ Ext.apply(window.MOCK_DATA, {
                 tree: [{
                     xtype: 'treecolumn',
                     text: 'Customer',
-                    flex: 2,
+                    flex: 3,
                     sortable: true,
                     dataIndex: 'name'
                 }, {
                     text: 'Phone #',
-                    flex: 1,
+                    flex: 2,
                     dataIndex: 'phone',
+                    sortable: true
+                }, {
+                    text: 'Priority',
+                    flex: 1,
+                    dataIndex: 'priority',
                     sortable: true
                 }]
             },
@@ -253,7 +258,15 @@ Ext.apply(window.MOCK_DATA, {
                             "children": [{
                                 "id": 2,
                                 "phone": "+380677031006",
+                                "priority": 1,
                                 "name": "Tommy Maintz",
+                                "leaf": true,
+                                "iconCls": "tree-grid-task"
+                            },{
+                                "id": 3,
+                                "phone": "+3806770311236",
+                                "name": "Tony Montana",
+                                "priority": 2,
                                 "leaf": true,
                                 "iconCls": "tree-grid-task"
                             }]

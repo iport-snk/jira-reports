@@ -20,28 +20,12 @@ Ext.define('Doc.ux.Document', {
                 },{
                     xtype: 'grid',
                     tbar:[{
-                        xtype: 'treepicker',
-                        displayField: 'text',
+                        xtype: 'docpicker',
+                        uri: '/directory/customers',
+                        displayField: 'name',
                         rootVisible: false,
-                        name: 'expenses',
-                        fieldLabel: 'Expenses',
-                        columns: [
-                            {dataIndex: "text", width: 400, xtype: 'treecolumn', text: "Name"},
-                            {dataIndex: "qtty", width: 80, text: "Qtty"}
-                        ],
-                        store: Ext.create('Ext.data.TreeStore', {
-                            root: {
-                                expanded: true,
-                                children: [
-                                    { text: 'detention', qtty: 10, leaf: true },
-                                    { text: 'homework', expanded: true, children: [
-                                        { text: 'book report', qtty: 30, leaf: true },
-                                        { text: 'algebra', qtty: 20, leaf: true}
-                                    ] },
-                                    { text: 'buy lottery tickets', qtty: 10, leaf: true }
-                                ]
-                            }
-                        })
+                        name: 'owner'
+
                     }],
                     selModel: 'cellmodel',
 

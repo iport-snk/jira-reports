@@ -3,7 +3,7 @@
  */
 Ext.define('Doc.ux.DocumentPicker', {
     extend: 'Ext.form.field.Picker',
-    xtype: 'documentpicker',
+    xtype: 'docpicker',
 
     uses: [
         'Ext.tree.Panel'
@@ -66,11 +66,8 @@ Ext.define('Doc.ux.DocumentPicker', {
 
         me.callParent(arguments);
 
-        me.mon(me.store, {
-            scope: me,
-            load: me.onLoad,
-            update: me.onUpdate
-        });
+        if (me.store) me.bindListeners();
+
     },
 
     /**
@@ -78,9 +75,16 @@ Ext.define('Doc.ux.DocumentPicker', {
      */
     createPicker: function() {
         var me = this,
+            columns = me.columns || [{
+                xtype: 'treecolumn',
+                text: '',
+                dataIndex: 'id'
+            }],
             picker = new Ext.tree.Panel({
                 baseCls: Ext.baseCSSPrefix + 'boundlist',
-                shrinkWrapDock: 2,
+                //shrinkWrapDock: 2,
+                width: 800,
+                height: 500,
                 border: false,
                 modal: true,
                 store: me.store,
@@ -88,7 +92,7 @@ Ext.define('Doc.ux.DocumentPicker', {
                 displayField: me.displayField,
                 useArrows: true,
                 rootVisible: false,
-                columns: me.columns,
+                columns: columns,
                 minHeight: me.minPickerHeight,
                 maxHeight: me.maxPickerHeight,
                 manageHeight: false,
@@ -173,20 +177,27 @@ Ext.define('Doc.ux.DocumentPicker', {
         var picker = this.picker,
             store = picker.store,
             value = this.value,
+            me = this,
             node;
 
 
-        if (value) {
-            node = store.getNodeById(value);
-        }
+        Doc.utils.StoreManager.getStore(me.uri).then(function(store){
+            me.store = store;
+            picker.reconfigure(store, store.columns);
 
-        if (!node) {
-            node = store.getRoot();
-        }
+            if (value) {
+                node = store.getNodeById(value);
+            }
 
-        picker.ensureVisible(node, {
-            select: true,
-            focus: true
+            if (!node) {
+                node = store.getRoot();
+            }
+
+            picker.ensureVisible(node, {
+                highlight: true,
+                select: true,
+                focus: true
+            });
         });
     },
 
@@ -255,6 +266,16 @@ Ext.define('Doc.ux.DocumentPicker', {
         if (type === 'edit' && modifiedFieldNames && Ext.Array.contains(modifiedFieldNames, display) && this.value === rec.getId()) {
             this.setRawValue(rec.get(display));
         }
+    },
+
+    bindListeners: function(){
+        var me = this;
+
+        me.mon(me.store, {
+            scope: me,
+            load: me.onLoad,
+            update: me.onUpdate
+        });
     }
 
 });

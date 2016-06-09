@@ -14,6 +14,7 @@ Ext.define('JC.Application', {
         'Doc.ux.DirectoryField',
         'Doc.ux.Registry',
         'Doc.ux.Document',
+        'Doc.ux.DocumentPicker',
         'Doc.ux.Directory',
 
 
