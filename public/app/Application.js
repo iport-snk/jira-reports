@@ -7,7 +7,6 @@ Ext.define('JC.Application', {
         'Ext.data.TreeModel',
         'Ext.layout.container.Border',
         'Ext.ux.TreePicker',
-
         'JC.utils.Format',
 
         'Doc.utils.ComponentFactory',
