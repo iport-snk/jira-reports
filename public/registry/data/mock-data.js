@@ -11,19 +11,28 @@ Ext.apply(window.MOCK_DATA, {
         data: {
             schema: {
                 form: [{
-                    xtype: 'directoryfield',
+                    xtype: 'docpicker',
                     uri: '/directory/products',
                     displayField: 'task',
                     name: 'requiredProduct',
                     fieldLabel: 'Product'
                 },{
-                    xtype: 'directoryfield',
+                    xtype: 'docpicker',
                     uri: '/directory/customers',
                     displayField: 'name',
-                    name: 'debtor',
-                    fieldLabel: 'Debtor'
+                    fieldLabel: 'Debtor',
+                    name: 'debtor'
                 }],
                 grid: [{
+                    dataIndex: 'product.task',
+                    header: 'Product',
+                    editor: {
+                        xtype: 'docpicker',
+                        uri: '/directory/products',
+                        displayField: 'task'
+                    },
+                    flex: 1
+                },{
                     header: 'Done',
                     dataIndex: 'resolutiondate',
                     formatter: 'date("d.m.Y")',
@@ -39,13 +48,13 @@ Ext.apply(window.MOCK_DATA, {
             data: {
                 form: {
                     requiredProduct: {"id": 13, "task": "Reattach screen door"},
-                    debtor: {"id": 2, "name": "Tommy Maintz"}
+                    debtor: {id: 3, name: 'Tony Montana'}
                 },
                 grid: [
-                    {resolutiondate: '2016-01-01 00:00:00', resolution: 'fixed'},
-                    {resolutiondate: '2016-01-02 00:00:00', resolution: 'todo'},
-                    {resolutiondate: '2016-01-03 00:00:00', resolution: 'rejected'},
-                    {resolutiondate: '2016-02-01 00:00:00', resolution: 'pending'}
+                    {resolutiondate: '2016-01-01 00:00:00', resolution: 'fixed', product: {"id": 18, "task": "Chrome"}},
+                    {resolutiondate: '2016-01-02 00:00:00', resolution: 'todo', product: {"id": 18, "task": "Chrome"}},
+                    {resolutiondate: '2016-01-03 00:00:00', resolution: 'rejected', product: {"id": 18, "task": "Chrome"}},
+                    {resolutiondate: '2016-02-01 00:00:00', resolution: 'pending', product: {"id": 18, "task": "Chrome"}}
                 ]
 
             }
@@ -80,10 +89,10 @@ Ext.apply(window.MOCK_DATA, {
                     assignee: 'botsvin d.'
                 },
                 grid: [
-                    {resolutiondate: '2016-01-01 00:00:00', resolution: 'fixed'},
-                    {resolutiondate: '2016-01-02 00:00:00', resolution: 'todo'},
-                    {resolutiondate: '2016-01-03 00:00:00', resolution: 'rejected'},
-                    {resolutiondate: '2016-02-01 00:00:00', resolution: 'pending'}
+                    {resolutiondate: '2016-01-01 00:00:00', resolution: 'fixed', product: {"id": 18, "task": "Chrome"}},
+                    {resolutiondate: '2016-01-02 00:00:00', resolution: 'todo', product: {"id": 18, "task": "Chrome"}},
+                    {resolutiondate: '2016-01-03 00:00:00', resolution: 'rejected', product: {"id": 18, "task": "Chrome"}},
+                    {resolutiondate: '2016-02-01 00:00:00', resolution: 'pending', product: {"id": 18, "task": "Chrome"}}
                 ]
             }
 

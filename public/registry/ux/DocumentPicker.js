@@ -163,9 +163,11 @@ Ext.define('Doc.ux.DocumentPicker', {
      */
     selectItem: function(record) {
         var me = this;
-        me.setValue(record.getId());
-        me.fireEvent('select', me, record);
-        me.collapse();
+        if (record.isLeaf()) {
+            me.setValue(record);
+            me.fireEvent('select', me, record);
+            me.collapse();
+        }
     },
 
     /**
@@ -175,18 +177,16 @@ Ext.define('Doc.ux.DocumentPicker', {
      */
     onExpand: function() {
         var picker = this.picker,
-            store = picker.store,
             value = this.value,
             me = this,
             node;
-
 
         Doc.utils.StoreManager.getStore(me.uri).then(function(store){
             me.store = store;
             picker.reconfigure(store, store.columns);
 
             if (value) {
-                node = store.getNodeById(value);
+                node = store.getNodeById(value.id);
             }
 
             if (!node) {
@@ -208,26 +208,17 @@ Ext.define('Doc.ux.DocumentPicker', {
      */
     setValue: function(value) {
         var me = this,
-            record;
+            displayValue;
 
         me.value = value;
 
-        if (me.store.loading) {
-            // Called while the Store is loading. Ensure it is processed by the onLoad method.
-            return me;
-        }
+        if (value instanceof Ext.data.Model) {
+            displayValue = value.get(this.displayField);
+        } else if (Ext.isObject(value)) {
+            displayValue = value[this.displayField];
+        };
 
-        // try to find a record in the store that matches the value
-        record = value ? me.store.getNodeById(value) : me.store.getRoot();
-        if (value === undefined) {
-            record = me.store.getRoot();
-            me.value = record.getId();
-        } else {
-            record = me.store.getNodeById(value);
-        }
-
-        // set the raw value to the record's display field if a record was found
-        me.setRawValue(record ? record.get(me.displayField) : '');
+        me.setRawValue(displayValue);
 
         return me;
     },
@@ -241,7 +232,13 @@ Ext.define('Doc.ux.DocumentPicker', {
      * @return {Number}
      */
     getValue: function() {
-        return this.value;
+        //{id: this.value.getId(), task: this.value.get('task')}
+        if (this.value instanceof Ext.data.Model) {
+            return {id: this.value.getId(), task: this.value.get('task')}
+        } else {
+            return this.value;
+        }
+
     },
 
     /**

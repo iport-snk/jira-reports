@@ -19,14 +19,7 @@ Ext.define('Doc.ux.Document', {
                     items: doc.schema.form
                 },{
                     xtype: 'grid',
-                    tbar:[{
-                        xtype: 'docpicker',
-                        uri: '/directory/customers',
-                        displayField: 'name',
-                        rootVisible: false,
-                        name: 'owner'
-
-                    }],
+                    tbar:[],
                     selModel: 'cellmodel',
 
                     plugins: {
