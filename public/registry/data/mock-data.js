@@ -113,7 +113,6 @@ Ext.apply(window.MOCK_DATA, {
         data: {
             uri: '/registry/invoices',
             schema: {
-                form: [],
                 grid: [{
                     header: 'Done',
                     dataIndex: 'resolutiondate',
@@ -127,7 +126,14 @@ Ext.apply(window.MOCK_DATA, {
                 }]
             },
             data: {
-                form: {},
+                // document types this registry is collecting
+                types: [{
+                    name: "Инвойс",
+                    uri: "/document/invoice"
+                },{
+                    name: "Оплата",
+                    uri: "/document/payment"
+                }],
                 grid: [
                     {resolutiondate: '2016-01-01 00:00:00', resolution: 'fixed', documentId: '/document/invoice/1'},
                     {resolutiondate: '2016-01-02 00:00:00', resolution: 'todo', documentId: '/document/invoice/2'},
