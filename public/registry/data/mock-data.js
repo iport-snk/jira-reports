@@ -46,15 +46,20 @@ Ext.apply(window.MOCK_DATA, {
                 }]
             },
             data: {
+                info: {
+                    name: "Инвойс",
+                    date: "2016-01-01 20:00:20",
+                    num: "I-01"
+                },
                 form: {
                     requiredProduct: {"id": 13, "task": "Reattach screen door"},
                     debtor: {id: 3, name: 'Tony Montana'}
                 },
                 grid: [
-                    {resolutiondate: '2016-01-01 00:00:00', resolution: 'fixed', product: {"id": 18, "task": "Chrome"}},
-                    {resolutiondate: '2016-01-02 00:00:00', resolution: 'todo', product: {"id": 18, "task": "Chrome"}},
-                    {resolutiondate: '2016-01-03 00:00:00', resolution: 'rejected', product: {"id": 18, "task": "Chrome"}},
-                    {resolutiondate: '2016-02-01 00:00:00', resolution: 'pending', product: {"id": 18, "task": "Chrome"}}
+                    {resolutiondate: '2016-01-01 00:00:00', resolution: 'fixed', product: {"id": 12, "task": "Fix lights"}},
+                    {resolutiondate: '2016-01-02 00:00:00', resolution: 'todo', product: {"id": 12, "task": "Fix lights"}},
+                    {resolutiondate: '2016-01-03 00:00:00', resolution: 'rejected', product: {"id": 2, "task": "Kitchen supplies"}},
+                    {resolutiondate: '2016-02-01 00:00:00', resolution: 'pending', product: {"id": 2, "task": "Kitchen supplies"}}
                 ]
 
             }
@@ -84,6 +89,11 @@ Ext.apply(window.MOCK_DATA, {
                 }]
             },
             data: {
+                info: {
+                    name: "Инвойс",
+                    date: "2016-01-02 10:11:00",
+                    num: "I-02"
+                },
                 form: {
                     description: 'another ',
                     assignee: 'botsvin d.'

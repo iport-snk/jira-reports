@@ -2,6 +2,7 @@ Ext.define('Doc.ux.Document', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.Document',
     border: false,
+    tbar: [],
     initComponent: function() {
         var doc = this;
         this.items = [];
@@ -11,6 +12,25 @@ Ext.define('Doc.ux.Document', {
                 url: doc.url
             }).then(function(response, opts) {
                 Ext.apply(doc, Ext.decode(response.responseText));
+                debugger;
+                doc.down('toolbar').add([{
+                    xtype: 'textfield',
+                    fieldLabel: doc.data.info.name,
+                    value:  doc.data.info.num,
+                    labelAllign: 'right',
+                    labelWidth: false,
+                    labelStyle: 'width: auto'
+                },{
+                    xtype: 'datefield',
+                    fieldLabel: 'от',
+                    value:  doc.data.info.date,
+                    labelWidth: false,
+                    labelStyle: 'width: auto'
+                },'->',{
+                    text:'Сохранить'
+                }, {
+                    text:'Удалить'
+                }]);
                 doc.add([{
                     xtype: 'form',
                     border: false,
@@ -20,10 +40,10 @@ Ext.define('Doc.ux.Document', {
                 },{
                     xtype: 'grid',
                     tbar:[],
-                    selModel: 'cellmodel',
+                    selModel: 'rowmodel',
 
                     plugins: {
-                        ptype: 'cellediting',
+                        ptype: 'rowediting',
                         clicksToEdit: 1
                     },
                     columns: Doc.utils.ComponentFactory.createColumns(doc),
