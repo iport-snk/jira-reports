@@ -9,6 +9,8 @@ Ext.define('JC.Application', {
         'Ext.ux.TreePicker',
         'JC.utils.Format',
 
+        'Doc.model.Schema',
+
         'Doc.utils.ComponentFactory',
         'Doc.utils.StoreManager',
         'Doc.ux.DirectoryField',
@@ -26,5 +28,12 @@ Ext.define('JC.Application', {
     stores: ['SalaryReport', 'Labels'],
     launch: function () {
         Ext.create('JC.view.Viewport');
+
+
+        horizon.onReady(function() {
+            Doc.model.Schema.update();
+        });
+        horizon.connect();
+
     }
 });

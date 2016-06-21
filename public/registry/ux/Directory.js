@@ -1,25 +1,31 @@
 Ext.define('Doc.ux.Directory', {
-    extend: 'Ext.tree.Panel',
+    extend: 'Ext.window.Window',
     alias: 'widget.Directory',
-    border: true,
-    useArrows: true,
-    rootVisible: false,
-    multiSelect: false,
-    singleExpand: true,
-    selModel: {
-        selType: 'treemodel', // rowmodel is the default selection model
-        mode: 'SINGLE', // Allows selection of multiple rows
-        enableKeyNav: false
+    items: {
+        xtype: 'treepanel',
+        border: false,
+        useArrows: true,
+        rootVisible: false,
+        multiSelect: false,
+        singleExpand: true,
+        selModel: {
+            selType: 'treemodel', // rowmodel is the default selection model
+            mode: 'SINGLE', // Allows selection of multiple rows
+            enableKeyNav: false
+        },
+        selectOnExpanderClick: true
     },
-    selectOnExpanderClick: true,
+
+
+
     listeners: {
         reconfigure: function(){
-            var me = this;
-// TODO: analize Ext.ux.TreePicker
+            var tree = this.down('tree');
+
             if (me.value){
-                var node = me.store.getNodeById(me.value.id);
-                if (!node) node = store.getRoot();
-                this.selectPath(node.getPath());
+                var node = tree.store.getNodeById(me.value.id);
+                if (!node) node = tree.store.getRoot();
+                tree.selectPath(node.getPath());
             }
 
         }
@@ -42,11 +48,7 @@ Ext.define('Doc.ux.Directory', {
         );*/
     },
 
-    initEvents: function(){
-        this.callParent();
-        // TODO: need to find out how value should correctly come here
 
-    },
     setValue : function(value){
         this.value = value;
         return this.update(this.value);
@@ -75,13 +77,13 @@ Ext.define('Doc.ux.Directory', {
      * @param {Date} date The new date
      */
     update : function(date){
-        var me = this;
-        Doc.utils.StoreManager.getStore(me.uri).then(function(store){
-            me.reconfigure(store, store.columns);
+        var tree = this.down('tree');
+        Doc.utils.StoreManager.getStore(this.uri).then(function(store){
+            tree.reconfigure(store, store.columns);
 
         });
 
-        return me;
+        return this;
     }
 
 });

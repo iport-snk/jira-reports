@@ -27,9 +27,12 @@ Ext.apply(window.MOCK_DATA, {
                     dataIndex: 'product.task',
                     header: 'Product',
                     editor: {
-                        xtype: 'docpicker',
-                        uri: '/directory/products',
-                        displayField: 'task'
+                        field: {
+                            xtype: 'docpicker',
+                            uri: '/directory/products',
+                            displayField: 'task'
+                        }
+
                     },
                     flex: 1
                 },{

@@ -2,7 +2,7 @@
  * A Picker field that contains a tree panel on its popup, enabling selection of tree nodes.
  */
 Ext.define('Doc.ux.DocumentPicker', {
-    extend: 'Ext.form.field.Picker',
+    extend: 'Doc.ux.Picker',
     xtype: 'docpicker',
 
     uses: [
