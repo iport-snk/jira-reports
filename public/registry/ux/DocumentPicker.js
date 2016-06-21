@@ -83,6 +83,7 @@ Ext.define('Doc.ux.DocumentPicker', {
             picker = new Ext.tree.Panel({
                 baseCls: Ext.baseCSSPrefix + 'boundlist',
                 //shrinkWrapDock: 2,
+                forceFit: true,
                 width: 800,
                 height: 500,
                 border: false,
@@ -193,6 +194,7 @@ Ext.define('Doc.ux.DocumentPicker', {
                 node = store.getRoot();
             }
 
+            picker.expandPath(node.getPath());
             picker.ensureVisible(node, {
                 highlight: true,
                 select: true,

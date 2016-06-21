@@ -4,15 +4,10 @@ Ext.define('Doc.ux.Registry', {
     forceFit: true,
     border: false,
     tbar: [{
-        text: 'New',
+        text: 'Создать',
+        itemId: 'createDocument',
         scope: this,
-        menu: [{
-            text:'Menu Item 1'
-        },{
-            text:'Menu Item 2'
-        },{
-            text:'Menu Item 3'
-        }]
+        menu: []
     }],
     listeners: {
         rowkeydown: function(row, record, tr, rowIndex, e, eOpts){
@@ -41,7 +36,18 @@ Ext.define('Doc.ux.Registry', {
             Ext.Ajax.request({
                 url: doc.url
             }).then(function(response, opts) {
+                var addNewBtn = doc.down('button#createDocument').menu,
+                    menuItems = [];
+
                 Ext.apply(doc, Ext.decode(response.responseText));
+                doc.data.types.forEach(function(item){
+                    menuItems.push({
+                        text: item.name,
+                        uri: item.uri,
+                        handler: doc.newDocument
+                    })
+                });
+                addNewBtn.add(menuItems);
                 doc.reconfigure(
                     Doc.utils.ComponentFactory.createStore(doc),
                     Doc.utils.ComponentFactory.createColumns(doc)
@@ -49,6 +55,9 @@ Ext.define('Doc.ux.Registry', {
 
             });
         });
+    },
+    newDocument: function(item){
+        debugger;
     }
 
 });
