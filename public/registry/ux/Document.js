@@ -2,55 +2,77 @@ Ext.define('Doc.ux.Document', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.Document',
     border: false,
-    tbar: [],
+    layout: {
+        type: 'vbox'
+    },
+    items: [{
+        xtype: 'form',
+        border: false,
+        bodyPadding: 5,
+        layout: 'form',
+        items: doc.schema.form
+    },{
+        xtype: 'grid',
+        flex: 1,
+        minHeight: 250,
+        tbar:[{
+            text: '+',
+            handler : function() {
+                var grid = this.up('grid'),
+                    rowEditing = grid.editingPlugin,
+                    store = grid.store;
+
+                rowEditing.cancelEdit();
+
+                var rs = store.insert(0,
+                    {resolutiondate: '2016-01-01 00:00:00', resolution: 'fixed', product: {"id": 18, "task": "Chrome"}}
+                );
+                rowEditing.startEdit(rs[0], 0);
+            }
+        }, {
+            itemId: 'removeRow',
+            text: '-',
+            handler: function() {
+                var grid = this.up('grid'),
+                    rowEditing = grid.editingPlugin,
+                    sm = grid.getSelectionModel(),
+                    store = grid.store;
+
+                rowEditing.cancelEdit();
+                store.remove(sm.getSelection());
+                if (store.getCount() > 0) {
+                    sm.select(0);
+                }
+            },
+            disabled: true
+        }],
+        selModel: 'rowmodel',
+
+        plugins: {
+            ptype: 'rowediting',
+            clicksToMoveEditor: 1,
+            autoCancel: false
+        },
+        columns: Doc.utils.ComponentFactory.createColumns(doc),
+        store: Doc.utils.ComponentFactory.createStore(doc),
+        forceFit: true,
+        listeners: {
+            'selectionchange': function(view, records) {
+                view.view.up('grid').down('#removeRow').setDisabled(!records.length);
+            }
+        }
+    }],
     initComponent: function() {
         var doc = this;
-        this.items = [];
+
         this.callParent();
         this.on('beforerender', function(){
             Ext.Ajax.request({
                 url: doc.url
             }).then(function(response, opts) {
                 Ext.apply(doc, Ext.decode(response.responseText));
-                debugger;
-                doc.down('toolbar').add([{
-                    xtype: 'textfield',
-                    fieldLabel: doc.data.info.name,
-                    value:  doc.data.info.num,
-                    labelAllign: 'right',
-                    labelWidth: false,
-                    labelStyle: 'width: auto'
-                },{
-                    xtype: 'datefield',
-                    fieldLabel: 'от',
-                    value:  doc.data.info.date,
-                    labelWidth: false,
-                    labelStyle: 'width: auto'
-                },'->',{
-                    text:'Сохранить'
-                }, {
-                    text:'Удалить'
-                }]);
-                doc.add([{
-                    xtype: 'form',
-                    border: false,
-                    bodyPadding: 5,
-                    layout: 'form',
-                    items: doc.schema.form
-                },{
-                    xtype: 'grid',
-                    tbar:[],
-                    selModel: 'rowmodel',
-
-                    plugins: {
-                        ptype: 'rowediting',
-                        clicksToEdit: 1
-                    },
-                    columns: Doc.utils.ComponentFactory.createColumns(doc),
-                    store: Doc.utils.ComponentFactory.createStore(doc),
-                    forceFit: true
-                }]);
-
+                return;
+                doc.down('form').add(doc.schema.form);
                 doc.down('form').getForm().setValues(doc.data.form);
             });
         });
