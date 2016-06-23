@@ -29,6 +29,14 @@ r.connect({
 
 var app = express();
 
+//ENABLE CORS
+app.use(function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', 'http://df.fun.co.ua/*');
+    res.header('Access-Control-Allow-Methods', 'GET, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    return next();
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
