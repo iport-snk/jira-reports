@@ -27,7 +27,8 @@ Ext.define('JC.controller.CashList', {
         },
         'CashList' : {
             selectionchange : 'onSelCh',
-            render: 'onGridRender'
+            render: 'onGridRender',
+            rowdblclick: 'openDoc'
         }
 
     },
@@ -53,7 +54,9 @@ Ext.define('JC.controller.CashList', {
 
     },
     addIncome: function() {
-
+        Ext.create({
+            xtype: 'CashIncome'
+        }).show();
     },
     addOutcome: function() {
 
@@ -69,6 +72,15 @@ Ext.define('JC.controller.CashList', {
         )
     },
     openDoc: function() {
+        var data = this.getGrid().getSelection()[0].getData(),
+            docAmount = data.amount < 0 ? data.amount * -1 : data.amount,
+            docType = data.amount < 0 ? 'CashOutcome' : 'CashIncome',
+            formData = Ext.applyIf({amount: docAmount}, data);
+
+        Ext.create({
+            xtype: docType,
+            record: formData
+        }).show();
 
     },
     onStoreLoad: function(store){

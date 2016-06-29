@@ -53,7 +53,7 @@ Ext.define('JC.view.CashList', {
         xtype: 'numbercolumn',
         format:'0.00',
         renderer: function(value) {
-            return value < 0 ? Ext.util.Format.number(value, '0.00') : '';
+            return value < 0 ? Ext.util.Format.number(value * -1, '0.00') : '';
         }
     },{
         header: 'Приход',

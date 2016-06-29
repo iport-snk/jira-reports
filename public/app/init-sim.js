@@ -1,7 +1,7 @@
 Ext.Loader.setConfig({
     enabled: true
 });
-Ext.Loader.setPath('Ext.ux', '/ext-6.0.2/ux');
+Ext.Loader.setPath('Ext.ux', '/ext-6.0.1/ux');
 Ext.require([
     'Ext.ux.ajax.DataSimlet',
     'Ext.ux.ajax.JsonSimlet',

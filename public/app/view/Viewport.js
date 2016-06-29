@@ -9,7 +9,9 @@ Ext.define('JC.view.Viewport', {
         'JC.view.TaskRow',
         'JC.view.Payments',
         'JC.view.PaymentTotals',
-        'JC.view.CashList'
+        'JC.view.CashList',
+        'JC.view.CashIncome',
+        'JC.view.CashOutcome'
     ],
 
     layout: {
