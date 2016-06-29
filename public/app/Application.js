@@ -9,31 +9,19 @@ Ext.define('JC.Application', {
         'Ext.ux.TreePicker',
         'JC.utils.Format',
 
-        'Doc.model.Schema',
-
-        'Doc.utils.ComponentFactory',
-        'Doc.utils.StoreManager',
-        'Doc.ux.DirectoryField',
-        'Doc.ux.Registry',
-        'Doc.ux.Document',
-        'Doc.ux.DocumentPicker',
-        'Doc.ux.Directory',
-
-
         'JC.view.Viewport'
     ],
 
     models: [],
-    controllers: ['SalaryReport', 'Payments'],
+    controllers: ['SalaryReport', 'Payments', 'CashList'],
     stores: ['SalaryReport', 'Labels'],
     launch: function () {
-        Ext.create('JC.view.Viewport');
 
-
-        horizon.onReady(function() {
-            Doc.model.Schema.update();
+        Ext.override(Ext.MessageBox, {
+            buttonText: { yes: "Да", no: "Нет", cancel: "Отмена" }
         });
-        horizon.connect();
+
+        Ext.create('JC.view.Viewport');
 
     }
 });

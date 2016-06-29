@@ -8,7 +8,10 @@ Ext.define('JC.view.Viewport', {
         'JC.view.TaskList',
         'JC.view.TaskRow',
         'JC.view.Payments',
-        'JC.view.PaymentTotals'
+        'JC.view.PaymentTotals',
+        'JC.view.CashList',
+        'JC.view.CashIncome',
+        'JC.view.CashOutcome'
     ],
 
     layout: {
@@ -25,28 +28,9 @@ Ext.define('JC.view.Viewport', {
             title: 'Плaтежи',
             xtype: 'Payments'
         },{
-            title: 'Registry',
-            xtype: 'Registry',
-            url: '/registry/invoices'
-
-        }/*,{
-            title: 'Products',
-            xtype: 'Directory',
-            url: '/directory/products'
-
-         },{
-            title: 'Documents',
-            xtype: 'Document',
-            url: '/document/invoice/1'
-
-        },{
-            title: 'Фильтры',
-            xtype: 'Filters'
-        },{
-            title: 'Задачи',
-            xtype: 'TaskList'
-        }*/
-        ]
+            title: 'Касса',
+            xtype: 'CashList'
+        }]
 
 
     }]
