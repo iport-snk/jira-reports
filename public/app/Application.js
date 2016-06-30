@@ -13,7 +13,7 @@ Ext.define('JC.Application', {
     ],
 
     models: [],
-    controllers: ['SalaryReport', 'Payments', 'CashList'],
+    controllers: ['SalaryReport', 'Payments', 'CashList', 'CashOutcome'],
     stores: ['SalaryReport', 'Labels'],
     launch: function () {
 

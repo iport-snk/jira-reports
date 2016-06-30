@@ -12,7 +12,7 @@ Ext.define('JC.view.CashOutcome', {
         xtype: 'datefield',
         format: "d.m.Y H:i:s",
         name: 'date',
-        fieldLabel: 'Time In',
+        fieldLabel: 'Дата',
         anchor: '100%'
     },{
         xtype: 'numberfield',
@@ -21,11 +21,38 @@ Ext.define('JC.view.CashOutcome', {
         name: 'amount',
         allowBlank: false
     },{
-        xtype: 'textfield',
+        xtype: 'combo',
         anchor: '100%',
-        fieldLabel: 'Last Name',
-        name: 'reason',
-        allowBlank: false
+        fieldLabel: 'Работник',
+        store: Ext.create('Ext.data.Store', {
+            fields: [{name: 'id'}, {name: 'name' }]
+        }),
+        name: 'employer',
+        allowBlank: false,
+        queryMode: 'local',
+        displayField: 'name',
+        valueField: 'id'
+    },{
+        xtype: 'tagfield',
+        anchor: '100%',
+        fieldLabel: 'Спринты',
+        store: Ext.create('Ext.data.Store', {
+            fields: [{name: 'id'}, {name: 'name' }]
+        }),
+        name: 'sprints',
+        allowBlank: false,
+        queryMode: 'local',
+        displayField: 'name',
+        valueField: 'id',
+        filterPickList: true,
+        disabled: false
+    },{
+        xtype : 'textareafield',
+        grow : true,
+        anchor: '100%',
+        fieldLabel: 'Коментарий',
+        name: 'comment'
+
     }],
     buttons: [{
         text: 'Закрыть',
@@ -51,11 +78,6 @@ Ext.define('JC.view.CashOutcome', {
                 });
             }
         }
-    }],
-    listeners: {
-        afterrender: function(){
-            this.getForm().setValues(this.record);
-        }
-    }
+    }]
 
 });
