@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var bill = require('./routes/bill');
+var sprints = require('./routes/sprints');
 
 var mysql = require('mysql');
 var pool  = mysql.createPool({
@@ -59,6 +60,7 @@ app.use(function(req, res, next) {
 app.use('/', routes);
 app.use('/users', users);
 app.use('/bill', bill);
+app.use('/sprints', sprints);
 
 
 

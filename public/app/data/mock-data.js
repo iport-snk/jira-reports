@@ -10,9 +10,9 @@ Ext.apply(window.MOCK_DATA, {
         type: 'json',
         data: [
             { date: '2016-02-03T00:00:00+02:00', reason: 'aaa1', amount: 50 },
-            { date: '2016-02-03T00:00:00+02:00', reason: 'aaa2', amount: -20 },
+            { date: '2016-02-03T00:00:00+02:00', reason: 'aaa2', amount: -5000, employer: 'ss' },
             { date: '2016-02-03T00:00:00+02:00', reason: 'aaa3', amount: 30 },
-            { date: '2016-02-03T00:00:00+02:00', reason: 'bbb', amount: -20 }
+            { date: '2016-02-03T00:00:00+02:00', reason: 'bbb', amount: -6000, employer: 'pv' }
         ]
     }
 });
