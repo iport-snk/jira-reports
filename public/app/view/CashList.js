@@ -5,15 +5,15 @@ Ext.define('JC.view.CashList', {
     store: Ext.create('Ext.data.Store', {
         storeId: 'CashList',
         fields: [
+            {name: 'id'},
             {name: 'amount'},
             {name: 'date', type: 'date'},
-            {name: 'reason'},
-            {name: 'comment'},
-            {name: 'category'}
+            {name: 'employer'},
+            {name: 'sprints'}
         ],
         proxy: {
             type: 'ajax',
-            url: '/cash',
+            url: '/sprints/payed',
             reader: {
                 type: 'json',
                 keepRawData: true
@@ -43,20 +43,29 @@ Ext.define('JC.view.CashList', {
         width: 160,
         format:'Y-m-d h:m:s'
     },{
-        header: 'Коментарий',
-        dataIndex: 'reason',
-        flex: 1
-    },{
-        header: 'Расход',
-        dataIndex: 'amount',
-        align: 'right',
-        xtype: 'numbercolumn',
-        format:'0.00',
-        renderer: function(value) {
-            return value < 0 ? Ext.util.Format.number(value * -1, '0.00') : '';
+        header: 'Спринты',
+        dataIndex: 'sprints',
+        flex: 1,
+        renderer: function(sprints) {
+            return sprints.reduce(function(prev, curr){
+                var sprint = JC.app.sprints.find(function(item){
+                    return item.id == curr;
+                });
+                return prev + (prev.length > 0 ? " | "  : "")  + (sprint ? sprint.name : '');
+            }, "");
         }
     },{
-        header: 'Приход',
+        header: 'Работник',
+        dataIndex: 'employer',
+        renderer: function(value) {
+            var empl = JC.app.employee.find(function(item){
+                return item.id == value;
+            });
+            return empl.name;
+        },
+        width: 150
+    },{
+        header: 'Сумма',
         dataIndex: 'amount',
         align: 'right',
         xtype: 'numbercolumn',
@@ -72,5 +81,5 @@ Ext.define('JC.view.CashList', {
     features: [{
         ftype: 'summary',
         dock: 'bottom'
-    }],
+    }]
 });

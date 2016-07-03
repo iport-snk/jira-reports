@@ -7,6 +7,7 @@ Ext.define('JC.view.CashOutcome', {
     width: 550,
     floating: true,
     modal: true,
+    url: 'sprints/payment',
     // Fields will be arranged vertically, stretched to full width
     items: [{
         xtype: 'datefield',
@@ -21,7 +22,7 @@ Ext.define('JC.view.CashOutcome', {
         name: 'amount',
         allowBlank: false
     },{
-        xtype: 'combo',
+        xtype: 'combobox',
         anchor: '100%',
         fieldLabel: 'Работник',
         store: Ext.create('Ext.data.Store', {
@@ -66,16 +67,16 @@ Ext.define('JC.view.CashOutcome', {
         formBind: true, //only enabled once the form is valid
         disabled: true,
         handler: function() {
-            var form = this.up('form').getForm();
+            var doc = this.up('form'),
+                form = doc.getForm();
+
+
             if (form.isValid()) {
-                form.submit({
-                    success: function(form, action) {
-                        Ext.Msg.alert('Success', action.result.msg);
-                    },
-                    failure: function(form, action) {
-                        Ext.Msg.alert('Failed', action.result.msg);
-                    }
-                });
+
+                form.updateRecord();
+                //var data = form.getValues();
+                //doc.record.set(form.getValues());
+                //debugger;
             }
         }
     }]

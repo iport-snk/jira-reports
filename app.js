@@ -15,7 +15,7 @@ var pool  = mysql.createPool({
     host     : 'df.fun.co.ua',
     user     : 'oleg',
     password : 'Mutabor73',
-    database: 'jira_reports'
+    database : 'jira_iport'
 });
 
 
