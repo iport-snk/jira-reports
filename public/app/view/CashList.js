@@ -4,13 +4,7 @@ Ext.define('JC.view.CashList', {
     forceFit: true,
     store: Ext.create('Ext.data.Store', {
         storeId: 'CashList',
-        fields: [
-            {name: 'id'},
-            {name: 'amount'},
-            {name: 'date', type: 'date'},
-            {name: 'employer'},
-            {name: 'sprints'}
-        ],
+        model: 'JC.model.Salary',
         proxy: {
             type: 'ajax',
             url: '/sprints/payed',
@@ -22,10 +16,7 @@ Ext.define('JC.view.CashList', {
         autoLoad: false
     }),
     tbar:[{
-        text: 'Приход',
-        itemId: 'btnIncome'
-    },{
-        text: 'Расход',
+        text: 'Создать',
         itemId: 'btnOutcome'
     },'->', {
         text: 'Открыть',
@@ -59,11 +50,11 @@ Ext.define('JC.view.CashList', {
         dataIndex: 'employer',
         renderer: function(value) {
             var empl = JC.app.employee.find(function(item){
-                return item.id == value;
+                return item.code == value;
             });
             return empl.name;
         },
-        width: 150
+        width: 240
     },{
         header: 'Сумма',
         dataIndex: 'amount',

@@ -4,20 +4,25 @@ Ext.define('JC.view.SalaryReport', {
     store: 'SalaryReport',
     tbar: [{
         xtype: 'combo',
-        id: 'employeeSelector',
+        itemId: 'employeeSelector',
         fieldLabel: 'Работник',
         store: Ext.create('Ext.data.Store',{
-            fields: ['employee', 'employee_type'],
+            fields: ['code', 'type', 'name'],
             proxy: {
                 type: 'ajax',
-                url: '/workers',
+                url: '/sprints/employee',
                 reader: {type: 'json'}
             },
             autoLoad: false
         }),
         queryMode: 'local',
-        displayField: 'employee',
-        valueField: 'employee'
+        displayField: 'name',
+        valueField: 'code',
+        width: 350
+    },{
+        xtype: 'button',
+        text: 'Обновить',
+        itemId: 'refreshBtn'
     }],
     workFormatter: function(){
         return 's'

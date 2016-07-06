@@ -26,13 +26,13 @@ Ext.define('JC.view.CashOutcome', {
         anchor: '100%',
         fieldLabel: 'Работник',
         store: Ext.create('Ext.data.Store', {
-            fields: [{name: 'id'}, {name: 'name' }]
+            fields: [{name: 'code'}, {name: 'name' }, {name: 'type' }]
         }),
         name: 'employer',
         allowBlank: false,
         queryMode: 'local',
         displayField: 'name',
-        valueField: 'id'
+        valueField: 'code'
     },{
         xtype: 'tagfield',
         anchor: '100%',
@@ -66,19 +66,7 @@ Ext.define('JC.view.CashOutcome', {
         text: 'Сохранить',
         formBind: true, //only enabled once the form is valid
         disabled: true,
-        handler: function() {
-            var doc = this.up('form'),
-                form = doc.getForm();
-
-
-            if (form.isValid()) {
-
-                form.updateRecord();
-                //var data = form.getValues();
-                //doc.record.set(form.getValues());
-                //debugger;
-            }
-        }
+        itemId: 'saveBtn'
     }]
 
 });

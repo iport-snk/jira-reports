@@ -82,27 +82,51 @@ router.get('/payed', function(req, res, next) {
 
 router.get('/employee', function(req, res, next) {
     req.pool.query(
-        'select jira_code as id, concat(first_name, " ", last_name) as name from employee where active = 1',
+        'select * from get_employee',
         function(err, recordset, fields){
             res.json(recordset);
         }
     );
 });
 
-router.get('/payment', function(req, res, next) {
-
-});
 router.post('/payment', function(req, res, next) {
-    var sprints = req.body.spints;
+    var doc = req.body,
+        sql = 'set @doc := ?; set @empl := ?; set @date := ?; set @amount := ?; set @comment := ?;' +
+            'insert into salary (date, employer, amount, comment, id) values (@date, @empl, @amount, @comment, @doc) ' +
+            'on duplicate key update date=values(date), employer=values(employer), amount=values(amount), comment=values(comment);' +
+            (doc.id == 0 ?
+            'set @doc := LAST_INSERT_ID();' :
+            'delete from salary_details where salary_id = @doc;') +
+            'insert into salary_details (salary_id, sprint, employer) values ' +
+            doc.sprints.map(function(sprint){
+                return "(@doc, " + sprint +", @empl)"
+            }).join(',') + ";select @doc as id;";
+
     req.pool.query(
-        'delete salary_details where salary_id = ?;',
-        [req.body.id],
+        sql,
+        [doc.id, doc.employer, doc.date, doc.amount, doc.comment],
         function(err, recordset, fields){
-            res.json(recordset);
+            recordset.forEach(function(item){
+                if (Array.isArray(item)) res.json(item[0]);
+            })
+
         }
     );
+
+
 });
 router.put('/payment', function(req, res, next) {
     debugger;
+});
+router.delete('/payment/:doc', function(req, res, next) {
+    req.pool.query(
+        'set @doc_id := ?;' +
+        'delete from salary_details where salary_id = @doc_id;' +
+        'delete from salary where id = @doc_id;',
+        [req.params.doc],
+        function(err, recordset, fields){
+            res.json(recordset);
+        }
+    );
 });
 module.exports = router;

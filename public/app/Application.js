@@ -3,6 +3,7 @@ Ext.define('JC.Application', {
     extend: 'Ext.app.Application',
     namespace: 'JC',
     requires:[
+        'JC.model.Salary',
         'Ext.tab.Panel',
         'Ext.data.TreeModel',
         'Ext.layout.container.Border',
@@ -10,6 +11,7 @@ Ext.define('JC.Application', {
         'JC.utils.Format',
 
         'JC.view.Viewport'
+
     ],
 
     models: [],
@@ -19,10 +21,17 @@ Ext.define('JC.Application', {
 
         Promise.all([
             Ext.Ajax.request({url: '/sprints/employee'}),
-            Ext.Ajax.request({url: '/sprints'})
+            Ext.Ajax.request({url: '/sprints'}),
+            Ext.Ajax.request({url: '/workers'})
         ]).then(function(rs){
             JC.app.employee = Ext.decode(rs[0].responseText);
             JC.app.sprints = Ext.decode(rs[1].responseText);
+            JC.app.workers = Ext.decode(rs[2].responseText);
+            Ext.create('Ext.data.Store', {
+                storeId: 'Workers',
+                fields: ['id', 'name', 'type'],
+                data: JC.app.workers
+            })
         });
 
 

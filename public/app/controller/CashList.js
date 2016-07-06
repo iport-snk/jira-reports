@@ -59,17 +59,30 @@ Ext.define('JC.controller.CashList', {
         }).show();
     },
     addOutcome: function() {
+        var record = Ext.create('JC.model.Salary',{
+            id: 0,
+            date: new Date()
+        });
         Ext.create({
-            xtype: 'CashOutcome'
+            xtype: 'CashOutcome',
+            record: record
         }).show();
     },
     delDoc: function() {
-        var records = this.getGrid().getSelection(),
+        var record = this.getGrid().getSelection()[0],
             store = this.getGrid().store;
 
         Ext.Msg.confirm('', 'Подтвердите удаление выбранных документов',
             function(decision) {
-                if (decision == 'yes') store.remove(records);
+                if (decision == 'yes') {
+
+                    Ext.Ajax.request({
+                        url: '/sprints/payment/' + record.get('id'),
+                        method: 'DELETE'
+                    }).then(function(response){
+                        store.remove(record);
+                    });
+                }
             }
         )
     },

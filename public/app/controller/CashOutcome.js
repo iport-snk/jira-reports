@@ -2,6 +2,7 @@ Ext.define('JC.controller.CashOutcome', {
     extend: 'Ext.app.Controller',
     refs: [
         {ref: 'Doc', selector: 'CashOutcome'},
+        {ref: 'Grid', selector: 'CashList'},
         {ref: 'SCombo', selector: 'CashOutcome [name="sprints"]'},
         {ref: 'ECombo', selector: 'CashOutcome [name="employer"]'}
     ],
@@ -11,6 +12,9 @@ Ext.define('JC.controller.CashOutcome', {
         },
         'CashOutcome' : {
             beforeshow : 'onShow'
+        },
+        'CashOutcome #saveBtn': {
+            click: 'onSave'
         }
     },
     onESelect: function(combo){
@@ -46,5 +50,27 @@ Ext.define('JC.controller.CashOutcome', {
             me.getSCombo().store.loadData(ds);
             doc.getForm().loadRecord(doc.record);
         })
+    },
+    onSave: function() {
+        var doc = this.getDoc(),
+            form = doc.getForm(),
+            me = this;
+
+        if (form.isValid()) {
+            form.updateRecord();
+            Ext.Ajax.request({
+                url: '/sprints/payment/',
+                method: 'POST',
+                jsonData: doc.record.getData()
+            }).then(function(response){
+                var id = Ext.decode(response.responseText).id;
+                doc.close();
+                if (doc.record.get('id') == 0) {
+                    doc.record.set('id', id);
+                    me.getGrid().store.add(doc.record);
+
+                }
+            });
+        }
     }
 });

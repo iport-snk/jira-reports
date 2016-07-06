@@ -19,7 +19,7 @@ router.get('/labels', function(req, res, next) {
 });
 
 router.get('/workers', function(req, res, next) {
-    req.pool.query('select * from get_workers',
+    req.pool.query("select employee as id, concat(employee, ' - ', employee_type) as name, employee_type as type from get_workers",
         function(err, rows, fields){
             res.json(rows);
         }
@@ -30,6 +30,41 @@ router.get('/labels-to-issues', function(req, res, next) {
     req.pool.query('select id, fieldid, issue, label from label', function(err, rows, fields){
         res.json(rows);
     })
+});
+
+router.get('/employee', function(req, res, next) {
+    req.pool.query(
+        'select * from employee',
+        function(err, recordset, fields){
+            res.json(recordset);
+        }
+    );
+});
+
+router.post('/employee', function(req, res, next) {
+    var sql = '';
+
+    if (req.body.removed.length > 0) {
+        sql += req.body.removed.map(function(item){
+            return 'delete from employee where id = ' + item.id;
+        }).join(';') + ';';
+    };
+    if (req.body.records.length > 0) {
+        sql += 'insert into employee (first_name, last_name, active, jira_code) values ' +
+            req.body.records.map(function(item){
+                return "('" + item.first_name + "','" + item.last_name + "'," + item.active + ",'" + item.jira_code + "')";
+            }).join(',') +
+            ' on duplicate key update ' +
+            ' first_name = values(first_name), last_name = values(last_name), active = values(active)';
+    }
+
+    req.pool.query(
+        sql,
+        function(err, recordset, fields){
+            res.json(recordset);
+        }
+
+    );
 });
 
 router.get('/salary-report', function(req, res, next) {

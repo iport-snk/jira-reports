@@ -11,7 +11,8 @@ Ext.define('JC.view.Viewport', {
         'JC.view.PaymentTotals',
         'JC.view.CashList',
         'JC.view.CashIncome',
-        'JC.view.CashOutcome'
+        'JC.view.CashOutcome',
+        'JC.view.Employee'
     ],
 
     layout: {
@@ -25,11 +26,14 @@ Ext.define('JC.view.Viewport', {
             title: 'Зарплата',
             xtype: 'SalaryReport'
         },{
+            title: 'Начисления',
+            xtype: 'CashList'
+        },{
+            title: 'Работники',
+            xtype: 'Employee'
+        },{
             title: 'Плaтежи',
             xtype: 'Payments'
-        },{
-            title: 'Касса',
-            xtype: 'CashList'
         }]
 
 
