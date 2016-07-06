@@ -72,7 +72,7 @@ router.get('/salary-report', function(req, res, next) {
         employeeType = req.query['employeeType'],
         calcWork = function(r){
             var connectionRate = {master: 70, worker: 70, assistant: 50},
-                rateMeter = 0.75,
+                rateMeter = {master: 0.50, worker: 0.50, assistant: 0.25},
                 hourRate = {master: 45, worker: 31.5, assistant: 0};
 
             r.workHrs = r.workCbl = r.workConn = 0;
@@ -82,8 +82,8 @@ router.get('/salary-report', function(req, res, next) {
                 r.estimate = r.original_estimate / 60;
                 r.work = r.workCbl = r.time_spent / 60;
                 r.unit = 'm';
-                r.rate = rateMeter;
-                r.cost = r.work * rateMeter;
+                r.rate = rateMeter[r.employee_type];
+                r.cost = r.work * r.rate;
             } else if (r.issuetype == 10100) {
                 // Подключение
                 r.work = r.workConn = r.estimate = 1;
