@@ -20,7 +20,7 @@ Ext.define('JC.controller.SalaryReport', {
         var record = this.getEmployer().getSelectedRecord();
 
         Ext.getStore('SalaryReport').load({
-            params: {employee: record.get('code'), employeeType: record.get('type')}
+            params: {employee: record.get('code'), employeeType: record.get('type'), position: record.get('position'), commission: record.get('commission')}
         });
     }
 

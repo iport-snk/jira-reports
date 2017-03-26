@@ -7,7 +7,7 @@ Ext.define('JC.view.SalaryReport', {
         itemId: 'employeeSelector',
         fieldLabel: 'Работник',
         store: Ext.create('Ext.data.Store',{
-            fields: ['code', 'type', 'name'],
+            fields: ['code', 'type', 'name', 'position', 'commission'],
             proxy: {
                 type: 'ajax',
                 url: '/sprints/employee',

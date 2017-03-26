@@ -85,10 +85,11 @@ router.get('/salary-report', function(req, res, next) {
                 r.rate = rateMeter[r.employee_type];
                 r.cost = r.work * r.rate;
             } else if (r.issuetype == 10100) {
+		var rate = req.query['position'] == 'promoter' ? parseInt(req.query['commission']) : connectionRate[r.employee_type];
                 // Подключение
                 r.work = r.workConn = r.estimate = 1;
                 r.unit = 'шт.';
-                r.cost = r.rate = connectionRate[r.employee_type];
+                r.cost = r.rate = rate;
             } else {
                 // Почасовка
                 r.work = r.workHrs = r.time_spent / 3600;
