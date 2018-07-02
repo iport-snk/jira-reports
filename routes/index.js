@@ -67,6 +67,16 @@ router.post('/employee', function(req, res, next) {
     );
 });
 
+router.get('/salary-grouped', function(req, res, next) {
+    req.pool.query(
+        "SELECT DATE_FORMAT(date, '%Y-%m') period, sum(amount) amount FROM jira_iport.salary where employer = ? group by period order by period;",
+        [req.query['employee']],
+        function(err, rows, fields){
+            res.json(rows);
+        }
+    )
+});
+
 router.get('/salary-report', function(req, res, next) {
     var employee = req.query['employee'],
         employeeType = req.query['employeeType'],
