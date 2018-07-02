@@ -12,9 +12,9 @@ var sprints = require('./routes/sprints');
 
 var mysql = require('mysql');
 var pool  = mysql.createPool({
-    host     : 'df.fun.co.ua',
-    user     : 'oleg',
-    password : 'Mutabor73',
+    host     : 'jira.iport.net.ua',
+    user     : 'oleg-root',
+    password : 'H@kkinen3',
     database : 'jira_iport',
     multipleStatements: true
 });

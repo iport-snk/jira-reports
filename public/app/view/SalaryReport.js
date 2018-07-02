@@ -61,7 +61,7 @@ Ext.define('JC.view.SalaryReport', {
         dataIndex: 'issue',
         xtype: 'templatecolumn',
         tpl: new Ext.XTemplate(
-            '<a href="http://df.fun.co.ua:8080/browse/{issue}" ' +
+            '<a href="http://jira.iport.net.ua/browse/{issue}" ' +
                 'target="_blank" ' +
                 'data-qtip="Начальная оценка: {estimate} {unit}">' +
                 '{issue}' +
